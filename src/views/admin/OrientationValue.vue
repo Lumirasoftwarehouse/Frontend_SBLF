@@ -70,7 +70,7 @@ const toggleSidebar = () => {
                       </td>
                       <td>
                          <img
-                          :src="`http://backend-sblf.lumirainternational.com/storage/orientationValue/${item.image}`"
+                          :src="`https://backend-sblf.lumirainternational.com/storage/orientationValue/${item.image}`"
                           alt="trend"
                           width="200"
                         />
@@ -247,7 +247,7 @@ export default {
         formData.append("image", this.dataValues.image);
         formData.append("judul", this.dataUpdateValues.judul);
         const response = await axios.post(
-          `http://backend-sblf.lumirainternational.com/api/auth/update-orientation/${this.idTrend}`,
+          `https://backend-sblf.lumirainternational.com/api/auth/update-orientation/${this.idTrend}`,
           formData,
           {
             headers: {
@@ -271,7 +271,7 @@ export default {
         formData.append("image", this.dataValues.image);
         formData.append("judul", this.dataValues.judul);
         const response = await axios.post(
-          "http://backend-sblf.lumirainternational.com/api/auth/create-orientation",
+          "https://backend-sblf.lumirainternational.com/api/auth/create-orientation",
           formData,
           {
             headers: {
@@ -295,7 +295,7 @@ export default {
     async deleteTrend(id) {
       try {
         const response = await axios.delete(
-          `http://backend-sblf.lumirainternational.com/api/auth/delete-orientation/${id}`,
+          `https://backend-sblf.lumirainternational.com/api/auth/delete-orientation/${id}`,
           {
             headers: {
               Authorization: `Bearer ${sessionStorage.getItem("token")}`,
@@ -315,7 +315,7 @@ export default {
         this.ready = false;
       try {
         const response = await axios.get(
-          "http://backend-sblf.lumirainternational.com/api/auth/list-orientation",
+          "https://backend-sblf.lumirainternational.com/api/auth/list-orientation",
           {
             headers: {
               Authorization: `Bearer ${sessionStorage.getItem("token")}`
