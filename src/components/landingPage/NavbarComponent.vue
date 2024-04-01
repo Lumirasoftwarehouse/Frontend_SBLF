@@ -2,7 +2,7 @@
   <nav class="navbar navbar-expand-lg bg-body-tertiary navbar-light navbarCustom fixed-top">
     <div class="container">
       <a class="navbar-brand" href="#">
-        <img src="img/logo.png" alt="sblf">
+        <img src="../../../public/img/logo.png" alt="sblf">
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
