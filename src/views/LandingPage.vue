@@ -25,7 +25,7 @@ const dataClient = ref([]);
 
 onMounted(async () => {
   try {
-    const response = await axios.get('http://127.0.0.1:8000/api/list-profile');
+    const response = await axios.get('http://backend-sblf.lumirainternational.com/api/list-profile');
     dataTrend.value = response.data.dataTrend|| [];
     dataQuote.value = response.data.dataQuote[0]?.quote || ''; 
     dataValue.value = response.data.dataValue || [];

@@ -133,7 +133,7 @@ export default {
     async kirimQuote() {
       try {
         const response = await axios.post(
-          "http://127.0.0.1:8000/api/auth/create-quote",
+          "http://backend-sblf.lumirainternational.com/api/auth/create-quote",
           {
             quote: this.newQoute,
           },
@@ -164,7 +164,7 @@ export default {
       this.ready = false;
       try {
         const response = await axios.get(
-          "http://127.0.0.1:8000/api/auth/get-quote",
+          "http://backend-sblf.lumirainternational.com/api/auth/get-quote",
           {
             headers: {
               Authorization: `Bearer ${sessionStorage.getItem("token")}`,

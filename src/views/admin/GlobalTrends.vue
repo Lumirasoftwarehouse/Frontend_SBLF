@@ -70,7 +70,7 @@ const toggleSidebar = () => {
                       </td>
                       <td>
                          <img
-                          :src="`http://127.0.0.1:8000/storage/globalTrend/${item.image}`"
+                          :src="`http://backend-sblf.lumirainternational.com/storage/globalTrend/${item.image}`"
                           alt="trend"
                           width="200"
                         />
@@ -247,7 +247,7 @@ export default {
         formData.append("image", this.dataTrends.image);
         formData.append("judul", this.dataUpdateTrends.judul);
         const response = await axios.post(
-          `http://127.0.0.1:8000/api/auth/update-trend/${this.idTrend}`,
+          `http://backend-sblf.lumirainternational.com/api/auth/update-trend/${this.idTrend}`,
           formData,
           {
             headers: {
@@ -271,7 +271,7 @@ export default {
         formData.append("image", this.dataTrends.image);
         formData.append("judul", this.dataTrends.judul);
         const response = await axios.post(
-          "http://127.0.0.1:8000/api/auth/create-trend",
+          "http://backend-sblf.lumirainternational.com/api/auth/create-trend",
           formData,
           {
             headers: {
@@ -296,7 +296,7 @@ export default {
     async deleteTrend(id) {
       try {
         const response = await axios.delete(
-          `http://127.0.0.1:8000/api/auth/delete-trend/${id}`,
+          `http://backend-sblf.lumirainternational.com/api/auth/delete-trend/${id}`,
           {
             headers: {
               Authorization: `Bearer ${sessionStorage.getItem("token")}`,
@@ -316,7 +316,7 @@ export default {
         this.ready = false;
       try {
         const response = await axios.get(
-          "http://127.0.0.1:8000/api/auth/list-trend",
+          "http://backend-sblf.lumirainternational.com/api/auth/list-trend",
           {
             headers: {
               Authorization: `Bearer ${sessionStorage.getItem("token")}`
