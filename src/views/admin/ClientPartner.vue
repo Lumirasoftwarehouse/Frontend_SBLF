@@ -69,7 +69,7 @@ const toggleSidebar = () => {
                       </td>
                       <td>
                          <img
-                          :src="`http://127.0.0.1:8000/storage/clientPartner/${item.image}`"
+                          :src="`https://backend-sblf.lumirainternational.com/storage/clientPartner/${item.image}`"
                           alt="trend"
                           width="200"
                         />
@@ -223,7 +223,7 @@ export default {
         const formData = new FormData();
         formData.append("image", this.dataClient.image);
         const response = await axios.post(
-          `http://127.0.0.1:8000/api/auth/update-client/${this.idClient}`,
+          `https://backend-sblf.lumirainternational.com/api/auth/update-client/${this.idClient}`,
           formData,
           {
             headers: {
@@ -246,7 +246,7 @@ export default {
          const formData = new FormData();
         formData.append("image", this.dataClient.image);
         const response = await axios.post(
-          "http://127.0.0.1:8000/api/auth/create-client",
+          "https://backend-sblf.lumirainternational.com/api/auth/create-client",
           formData,
           {
             headers: {
@@ -267,7 +267,7 @@ export default {
     async deleteTrend(id) {
       try {
         const response = await axios.delete(
-          `http://127.0.0.1:8000/api/auth/delete-client/${id}`,
+          `https://backend-sblf.lumirainternational.com/api/auth/delete-client/${id}`,
           {
             headers: {
               Authorization: `Bearer ${sessionStorage.getItem("token")}`,
@@ -287,7 +287,7 @@ export default {
         this.ready = false;
       try {
         const response = await axios.get(
-          "http://127.0.0.1:8000/api/auth/list-client",
+          "https://backend-sblf.lumirainternational.com/api/auth/list-client",
           {
             headers: {
               Authorization: `Bearer ${sessionStorage.getItem("token")}`

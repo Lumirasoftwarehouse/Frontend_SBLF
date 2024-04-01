@@ -4,7 +4,7 @@
       <h2 class="text-center fw-bold text-light">CLIENT PARTNER</h2>
       <div class="card-container">
         <div v-for="(client, index) in dataClient" :key="index" class="card">
-          <img :src="`http://127.0.0.1:8000/storage/clientPartner/${client.image}`" alt="Client Logo" class="client-logo" />
+          <img :src="`https://backend-sblf.lumirainternational.com/storage/clientPartner/${client.image}`" alt="Client Logo" class="client-logo" />
         </div>
       </div>
     </div>

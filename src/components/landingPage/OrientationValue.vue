@@ -7,7 +7,7 @@
         <div class="col-sm-6" v-if="dataValue.length > 0">
           <div class="card">
             <div class="card-content">
-              <img :src="`http://127.0.0.1:8000/storage/orientationValue/${dataValue[0].image}`" alt="Card Image" />
+              <img :src="`https://backend-sblf.lumirainternational.com/storage/orientationValue/${dataValue[0].image}`" alt="Card Image" />
               <div class="blue-box">
                 <p>{{dataValue[0].judul}}</p>
               </div>
@@ -20,7 +20,7 @@
             <div class="col-sm-6" v-for="(item, index) in dataValue.slice(1)" :key="index">
               <div class="card">
                 <div class="card-content">
-                  <img :src="`http://127.0.0.1:8000/storage/orientationValue/${item.image}`" alt="Card Image" />
+                  <img :src="`https://backend-sblf.lumirainternational.com/storage/orientationValue/${item.image}`" alt="Card Image" />
                   <div class="blue-box">
                     <p>{{ item.judul }}</p>
                   </div>
