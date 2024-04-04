@@ -1,5 +1,5 @@
 <template>
-  <div class="opportunity" id="opportunity">
+  <div class="opportunity bg-white" id="opportunity">
     <div class="container">
       <div class="row">
         <div class="col-sm-12">

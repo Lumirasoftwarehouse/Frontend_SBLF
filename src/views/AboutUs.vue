@@ -17,12 +17,9 @@ import Footer from "../components/landingPage/FooterComponent.vue";
 import { ref, onMounted } from 'vue';
 import axios from 'axios';
 
-const dataOpportunity = ref([]);
-const dataBenefit = ref([]);
-const dataTrend = ref('');
-const dataQuote = ref('');
-const dataValue = ref([]);
-const dataClient = ref([]);
+const dataAbout = ref('');
+const dataVisi = ref('');
+const dataMisi = ref([]);
 
 
 onMounted(async () => {
@@ -30,13 +27,9 @@ onMounted(async () => {
     const response = await axios.get('https://backend-sblf.lumirainternational.com/api/list-profile');
     // const response = await axios.get('http://127.0.0.1:8000/api/list-profile');
     
-   
-    dataOpportunity.value = response.data.dataOpportunity|| [];
-    dataBenefit.value = response.data.dataBenefit|| [];
-    dataTrend.value = response.data.dataTrend|| [];
-    dataQuote.value = response.data.dataQuote[0]?.quote || ''; 
-    dataValue.value = response.data.dataValue || [];
-    dataClient.value = response.data.dataClient || [];
+    dataAbout.value = response.data.dataAbout[0]?.about || ''; 
+    dataVisi.value = response.data.dataVisi[0]?.visi || ''; 
+    dataMisi.value = response.data.dataMisi|| [];
     
   } catch (error) {
     console.error(error);
@@ -47,12 +40,6 @@ onMounted(async () => {
 <template>
     <Navbar/>
     <Jumbotron/>
-    <Opportunity :dataOpportunity="dataOpportunity"/>
-    <BenefitProgram :dataBenefit="dataBenefit"/>
-    <GlobalTrends :dataTrend="dataTrend"/>
-    <Quote :dataQuote="dataQuote"/>
-    <OrientationValue :dataValue="dataValue"/>
-    <ClientPartner :dataClient="dataClient"/>
-    <Register/>
-    <Contact/>
+    <About :dataAbout="dataAbout"/>
+    <VisiMisi :dataVisi="dataVisi" :dataMisi="dataMisi"/>
 </template>

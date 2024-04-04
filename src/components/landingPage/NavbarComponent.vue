@@ -1,33 +1,81 @@
 <template>
-  <nav class="navbar navbar-expand-lg bg-body-tertiary navbar-light navbarCustom fixed-top">
+  <nav
+    class="navbar navbar-expand-lg bg-body-tertiary navbar-light navbarCustom fixed-top"
+  >
     <div class="container">
       <a class="navbar-brand" href="#">
-        <img src="../../../public/img/logo.png" alt="sblf">
+        <img src="../../../public/img/logo.png" alt="sblf" />
       </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
         <span class="navbar-toggler-icon"></span>
       </button>
       <div :class="navbarClass" id="navbarNav">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
-            <a class="nav-link menu" :class="{ 'active': activeLink === 'home' }" @click="setActive('home')" href="#about">HOME</a>
+            <router-link
+              class="nav-link menu"
+              :to="{ name: 'landing-page' }"
+              v-bind:class="{ active: activeLink === 'home' }"
+              @click="setActive('home')"
+              >HOME</router-link
+            >
+            
           </li>
           <li class="nav-item">
-            <a class="nav-link menu" :class="{ 'active': activeLink === 'about' }" @click="setActive('about')" href="#visiMisi">ABOUT US</a>
+            <router-link
+              class="nav-link menu"
+              :to="{ name: 'about-us' }"
+              v-bind:class="{ active: activeLink === 'about' }"
+              @click="setActive('about')"
+              >ABOUT US</router-link
+            >
           </li>
           <li class="nav-item">
-            <a class="nav-link menu" :class="{ 'active': activeLink === 'trends' }" @click="setActive('trends')" href="#benefit">GLOBAL TRENDS</a>
+            <a
+              class="nav-link menu"
+              :class="{ active: activeLink === 'trends' }"
+              @click="setActive('trends')"
+              href="#benefit"
+              >GLOBAL TRENDS</a
+            >
           </li>
           <li class="nav-item">
-            <a class="nav-link menu" :class="{ 'active': activeLink === 'values' }" @click="setActive('values')" href="#opportunity">ORIENTATION VALUES</a>
+            <a
+              class="nav-link menu"
+              :class="{ active: activeLink === 'values' }"
+              @click="setActive('values')"
+              href="#opportunity"
+              >ORIENTATION VALUES</a
+            >
           </li>
           <li class="nav-item">
-            <a class="nav-link menu" :class="{ 'active': activeLink === 'contact' }" @click="setActive('contact')" href="#berita">CONTACT US</a>
+            <a
+              class="nav-link menu"
+              :class="{ active: activeLink === 'contact' }"
+              @click="setActive('contact')"
+              href="#berita"
+              >CONTACT US</a
+            >
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#berita">
-              <button class="btn" style="background: linear-gradient(to right, #2A3798, #0995DD); color: white;">Register</button>
+              <button
+                class="btn"
+                style="
+                  background: linear-gradient(to right, #2a3798, #0995dd);
+                  color: white;
+                "
+              >
+                Register
+              </button>
             </a>
           </li>
         </ul>
@@ -37,21 +85,21 @@
 </template>
 
 <script>
-import { useStore } from 'vuex';
+import { useStore } from "vuex";
 export default {
   data() {
     return {
       isNavbarOpen: false,
-      activeLink: null
+      activeLink: null,
     };
   },
   computed: {
     navbarClass() {
       return {
-        'collapse': !this.isNavbarOpen,
-        'navbar-collapse': true
+        collapse: !this.isNavbarOpen,
+        "navbar-collapse": true,
       };
-    }
+    },
   },
   methods: {
     toggleNavbar() {
@@ -59,8 +107,8 @@ export default {
     },
     setActive(link) {
       this.activeLink = link;
-    }
-  }
+    },
+  },
 };
 </script>
 
@@ -70,20 +118,20 @@ export default {
 }
 
 .nav-link.active {
-  color: #0995DD !important; /* warna biru muda */
+  color: #0995dd !important; /* warna biru muda */
   text-decoration: none;
 }
 
 .nav-link.active::after {
-  content: '';
+  content: "";
   display: block;
   width: 100%;
   height: 2px;
-  background-color: #2A3798; /* garis bawah biru tua */
+  background-color: #2a3798; /* garis bawah biru tua */
 }
 
 .navbarCustom {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 
 .navbar-nav .nav-item .dropdown-menu {
@@ -117,7 +165,7 @@ export default {
 }
 
 @media only screen and (max-width: 600px) {
-  img{
+  img {
     width: 50px;
   }
 }
