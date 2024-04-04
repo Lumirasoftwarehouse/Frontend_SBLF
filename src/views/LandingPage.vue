@@ -30,8 +30,8 @@ const dataClient = ref([]);
 
 onMounted(async () => {
   try {
-    // const response = await axios.get('https://backend-sblf.lumirainternational.com/api/list-profile');
-    const response = await axios.get('http://127.0.0.1:8000/api/list-profile');
+    const response = await axios.get('https://backend-sblf.lumirainternational.com/api/list-profile');
+    // const response = await axios.get('http://127.0.0.1:8000/api/list-profile');
     
     dataAbout.value = response.data.dataAbout[0]?.about || ''; 
     dataVisi.value = response.data.dataVisi[0]?.visi || ''; 
