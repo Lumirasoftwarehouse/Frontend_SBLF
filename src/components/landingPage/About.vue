@@ -3,8 +3,7 @@
           <h2 class="text-center">About Us</h2>
           <div class="row">
             <div class="col-sm-6">
-              <p>SBLF (Strategic Business Leader Forum) adalah sebuah forum bisnis interaktif yang dirancang khusus untuk membawa  para pemimpin bisnis, pengusaha, dan profesional industri untuk bersama dalam sebuah networking efektif untuk mengatasi tantangan global, regional, dan nasional.
-Bersama mengedepankan isu isu penting, menyertakan strategi breakthrough yang penting dalam resiliensi bisnis melalui catalytic collaboration, leadership and corporate energy, strategic game changer business.</p>
+              <p>{{dataAbout}}</p>
             </div>
             <div class="col-sm-6">
               <img src="/img/about.png" alt="about">

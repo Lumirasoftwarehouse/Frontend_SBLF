@@ -1,8 +1,8 @@
 <script setup>
-import Sidebar from "../../../components/admin/Sidebar.vue";
-import Navbar from "../../../components/general/Navbar.vue";
-import Footer from "../../../components/general/Footer.vue";
-import Card from "../../../components/general/Card.vue";
+import Sidebar from "../../components/admin/Sidebar.vue";
+import Navbar from "../../components/general/Navbar.vue";
+import Footer from "../../components/general/Footer.vue";
+import Card from "../../components/general/Card.vue";
 import { ref } from "vue";
 
 const sidebarToggled = ref(false);
@@ -201,7 +201,7 @@ export default {
     async updateBenefit() {
       try {
         const response = await axios.post(
-          `http://127.0.0.1:8000/api/auth/update-benefit/${this.idBenefit}`,
+          `https://backend-sblf.lumirainternational.com/api/auth/update-benefit/${this.idBenefit}`,
           {
             benefit: this.dataBenefit,
           },
@@ -224,7 +224,7 @@ export default {
         async tambahBenefit() {
       try {
         const response = await axios.post(
-          "http://127.0.0.1:8000/api/auth/create-benefit",
+          "https://backend-sblf.lumirainternational.com/api/auth/create-benefit",
           {
             benefit: this.newBenefit
           },
@@ -247,7 +247,7 @@ export default {
     async deleteBenefit(id) {
       try {
         const response = await axios.delete(
-          `http://127.0.0.1:8000/api/auth/delete-benefit/${id}`,
+          `https://backend-sblf.lumirainternational.com/api/auth/delete-benefit/${id}`,
           {
             headers: {
               Authorization: `Bearer ${sessionStorage.getItem("token")}`,
@@ -267,7 +267,7 @@ export default {
         this.ready = false;
       try {
         const response = await axios.get(
-          "http://127.0.0.1:8000/api/auth/get-benefit",
+          "https://backend-sblf.lumirainternational.com/api/auth/get-benefit",
           {
             headers: {
               Authorization: `Bearer ${sessionStorage.getItem("token")}`

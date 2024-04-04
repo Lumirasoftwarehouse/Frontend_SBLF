@@ -1,8 +1,8 @@
 <script setup>
-import Sidebar from "../../../components/admin/Sidebar.vue";
-import Navbar from "../../../components/general/Navbar.vue";
-import Footer from "../../../components/general/Footer.vue";
-import Card from "../../../components/general/Card.vue";
+import Sidebar from "../../components/admin/Sidebar.vue";
+import Navbar from "../../components/general/Navbar.vue";
+import Footer from "../../components/general/Footer.vue";
+import Card from "../../components/general/Card.vue";
 import { ref } from "vue";
 
 const sidebarToggled = ref(false);
@@ -74,7 +74,7 @@ const toggleSidebar = () => {
                       </td>
                       <td>
                         <img
-                          :src="`http://127.0.0.1:8000/storage/images/${item.image}`"
+                          :src="`https://backend-sblf.lumirainternational.com/storage/images/${item.image}`"
                           alt="opportunity"
                           width="200"
                         />
@@ -280,7 +280,7 @@ export default {
         formData.append("judul", this.updateOpportunity.judul);
         formData.append("deskripsi", this.updateOpportunity.deskripsi);
         const response = await axios.post(
-          `http://127.0.0.1:8000/api/auth/update-opportunity/${this.updateOpportunity.idOpportunity}`,
+          `https://backend-sblf.lumirainternational.com/api/auth/update-opportunity/${this.updateOpportunity.idOpportunity}`,
           formData,
           {
             headers: {
@@ -317,7 +317,7 @@ export default {
         formData.append("judul", this.dataOpportunity.judul);
         formData.append("deskripsi", this.dataOpportunity.deskripsi);
         const response = await axios.post(
-          "http://127.0.0.1:8000/api/auth/create-opportunity",
+          "https://backend-sblf.lumirainternational.com/api/auth/create-opportunity",
           formData,
           {
             headers: {
@@ -350,7 +350,7 @@ export default {
       this.ready = false;
       try {
         const response = await axios.get(
-          "http://127.0.0.1:8000/api/auth/get-opportunity",
+          "https://backend-sblf.lumirainternational.com/api/auth/get-opportunity",
           {
             headers: {
               Authorization: `Bearer ${sessionStorage.getItem("token")}`,
@@ -385,7 +385,7 @@ export default {
     async deleteOpportunity(id) {
       try {
         const response = await axios.delete(
-          `http://127.0.0.1:8000/api/auth/delete-opportunity/${id}`,
+          `https://backend-sblf.lumirainternational.com/api/auth/delete-opportunity/${id}`,
           {
             headers: {
               Authorization: `Bearer ${sessionStorage.getItem("token")}`,

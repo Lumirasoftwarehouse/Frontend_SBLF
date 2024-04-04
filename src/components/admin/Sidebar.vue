@@ -32,6 +32,52 @@
       </router-link>
     </li>
 
+    <!-- Nav Item - About -->
+    <li class="nav-item">
+      <router-link
+        class="nav-link text-primary"
+        to="/admin-about"
+        active-class="font-weight-bold text-primary active-link"
+      >
+        <i class="bi bi-bar-chart-line text-primary"></i>
+        <span>About SBLF</span>
+      </router-link>
+    </li>
+
+    <!-- Nav Item - Visi Misi -->
+    <li class="nav-item">
+      <router-link
+        class="nav-link text-primary"
+        to="/admin-visi-misi"
+        active-class="font-weight-bold text-primary active-link"
+      >
+        <i class="bi bi-bar-chart-line text-primary"></i>
+        <span>Visi Misi</span>
+      </router-link>
+    </li>
+    <!-- Nav Item - Opportunity -->
+    <li class="nav-item">
+      <router-link
+        class="nav-link text-primary"
+        to="/admin-opportunity"
+        active-class="font-weight-bold text-primary active-link"
+      >
+        <i class="bi bi-bar-chart-line text-primary"></i>
+        <span>Opportunity</span>
+      </router-link>
+    </li>
+    <!-- Nav Item - Benefit -->
+    <li class="nav-item">
+      <router-link
+        class="nav-link text-primary"
+        to="/admin-benefit"
+        active-class="font-weight-bold text-primary active-link"
+      >
+        <i class="bi bi-bar-chart-line text-primary"></i>
+        <span>Benefit Program</span>
+      </router-link>
+    </li>
+
     <!-- Nav Item - Trend -->
     <li class="nav-item">
       <router-link

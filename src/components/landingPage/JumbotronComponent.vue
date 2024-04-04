@@ -1,7 +1,7 @@
 <template>
   <div class="jumbotron" id="/">
     <img src="/img/jumbotron.png" alt="home" class="jumbotron-image" />
-    <div class="lengkung bg-light"></div>
+    <div class="lengkung bg-white"></div>
   </div>
 </template>
 

@@ -19,6 +19,26 @@ const router = createRouter({
       component: () => import('../views/admin/Dashboard.vue')
     },    
     {
+      path: '/admin-about',
+      name: 'admin-about',
+      component: () => import('../views/admin/About.vue')
+    },    
+    {
+      path: '/admin-visi-misi',
+      name: 'admin-visi-misi',
+      component: () => import('../views/admin/VisiMisi.vue')
+    },    
+    {
+      path: '/admin-opportunity',
+      name: 'admin-opportunity',
+      component: () => import('../views/admin/Opportunity.vue')
+    },    
+    {
+      path: '/admin-benefit',
+      name: 'admin-benefit',
+      component: () => import('../views/admin/BenefitProgram.vue')
+    },    
+    {
       path: '/admin-trend',
       name: 'admin-trend',
       component: () => import('../views/admin/GlobalTrends.vue')

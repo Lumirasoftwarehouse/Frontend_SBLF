@@ -1,8 +1,8 @@
 <script setup>
-import Sidebar from "../../../components/admin/Sidebar.vue";
-import Navbar from "../../../components/general/Navbar.vue";
-import Footer from "../../../components/general/Footer.vue";
-import Card from "../../../components/general/Card.vue";
+import Sidebar from "../../components/admin/Sidebar.vue";
+import Navbar from "../../components/general/Navbar.vue";
+import Footer from "../../components/general/Footer.vue";
+import Card from "../../components/general/Card.vue";
 import { ref } from "vue";
 
 const sidebarToggled = ref(false);
@@ -281,7 +281,7 @@ export default {
     async tambahVisi() {
       try {
         const response = await axios.post(
-          "http://127.0.0.1:8000/api/auth/create-visi",
+          "https://backend-sblf.lumirainternational.com/api/auth/create-visi",
           {
             visi: this.newVisi,
           },
@@ -305,7 +305,7 @@ export default {
     async tambahMisi() {
       try {
         const response = await axios.post(
-          "http://127.0.0.1:8000/api/auth/create-misi",
+          "https://backend-sblf.lumirainternational.com/api/auth/create-misi",
           {
             misi: this.newMisi,
           },
@@ -329,7 +329,7 @@ export default {
     async updateMisi() {
       try {
         const response = await axios.post(
-          `http://127.0.0.1:8000/api/auth/update-misi/${this.idMisi}`,
+          `https://backend-sblf.lumirainternational.com/api/auth/update-misi/${this.idMisi}`,
           {
             misi: this.dataMisi,
           },
@@ -352,7 +352,7 @@ export default {
     async deleteMisi(id) {
       try {
         const response = await axios.delete(
-          `http://127.0.0.1:8000/api/auth/delete-misi/${id}`,
+          `https://backend-sblf.lumirainternational.com/api/auth/delete-misi/${id}`,
           {
             headers: {
               Authorization: `Bearer ${sessionStorage.getItem("token")}`,
@@ -372,7 +372,7 @@ export default {
       this.readyVisi = false;
       try {
         const response = await axios.get(
-          "http://127.0.0.1:8000/api/auth/get-visi",
+          "https://backend-sblf.lumirainternational.com/api/auth/get-visi",
           {
             headers: {
               Authorization: `Bearer ${sessionStorage.getItem("token")}`,
@@ -389,7 +389,7 @@ export default {
       this.readyMisi = false;
       try {
         const response = await axios.get(
-          "http://127.0.0.1:8000/api/auth/get-misi",
+          "https://backend-sblf.lumirainternational.com/api/auth/get-misi",
           {
             headers: {
               Authorization: `Bearer ${sessionStorage.getItem("token")}`,

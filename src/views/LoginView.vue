@@ -124,6 +124,7 @@ export default {
 
       axios
         .post("https://backend-sblf.lumirainternational.com/api/auth/login", formData)
+        // .post("http://127.0.0.1:8000/api/auth/login", formData)
         .then((response) => {
           if (this.cheked === true) {
             const login = JSON.stringify(this.form);
