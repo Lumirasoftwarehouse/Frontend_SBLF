@@ -14,6 +14,21 @@ const router = createRouter({
       component: () => import('../views/AboutUs.vue')
     },
     {
+      path: '/global-trend',
+      name: 'global-trend',
+      component: () => import('../views/GlobalTrend.vue')
+    },
+    {
+      path: '/orientation-value',
+      name: 'orientation-value',
+      component: () => import('../views/OrientationValue.vue')
+    },
+    {
+      path: '/obip',
+      name: 'obip',
+      component: () => import('../views/OBIP.vue')
+    },
+    {
       path: '/login',
       name: 'login',
       component: () => import('../views/LoginView.vue')

@@ -1,0 +1,1 @@
+import{N as r,J as e}from"./JumbotronComponent-bd6a6103.js";import{O as o}from"./OBIP-28168b1c.js";import{o as t,c as s,g as a,F as m}from"./index-ccb2f7bd.js";const f={__name:"OBIP",setup(c){return(n,p)=>(t(),s(m,null,[a(r),a(e),a(o)],64))}};export{f as default};

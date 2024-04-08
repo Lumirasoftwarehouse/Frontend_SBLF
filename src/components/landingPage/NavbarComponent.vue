@@ -39,21 +39,30 @@
             >
           </li>
           <li class="nav-item">
-            <a
+             <router-link
               class="nav-link menu"
-              :class="{ active: activeLink === 'trends' }"
+              :to="{ name: 'global-trend' }"
+              v-bind:class="{ active: activeLink === 'trends' }"
               @click="setActive('trends')"
-              href="#benefit"
-              >GLOBAL TRENDS</a
+              >GLOBAL TRENDS</router-link
             >
           </li>
           <li class="nav-item">
-            <a
+             <router-link
               class="nav-link menu"
-              :class="{ active: activeLink === 'values' }"
+              :to="{ name: 'orientation-value' }"
+              v-bind:class="{ active: activeLink === 'values' }"
               @click="setActive('values')"
-              href="#opportunity"
-              >ORIENTATION VALUES</a
+              >ORIENTATION VALUES</router-link
+            >
+          </li>
+          <li class="nav-item">
+             <router-link
+              class="nav-link menu"
+              :to="{ name: 'obip' }"
+              v-bind:class="{ active: activeLink === 'obip' }"
+              @click="setActive('obip')"
+              >OBIP</router-link
             >
           </li>
           <li class="nav-item">
