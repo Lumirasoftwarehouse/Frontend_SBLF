@@ -8,7 +8,6 @@ import Contact from "../components/landingPage/Contact.vue";
 import BenefitProgram from "../components/landingPage/BenefitProgram.vue";
 import Opportunity from "../components/landingPage/Opportunity.vue";
 import Berita from "../components/landingPage/backup/BeritaComponent.vue";
-import OBIP from "../components/landingPage/OBIP.vue";
 import Footer from "../components/landingPage/FooterComponent.vue";
 
 import { ref, onMounted } from 'vue';
@@ -40,7 +39,6 @@ onMounted(async () => {
 <template>
     <Navbar/>
     <Jumbotron/>
-    <OBIP/>
     <Opportunity :dataOpportunity="dataOpportunity"/>
     <BenefitProgram :dataBenefit="dataBenefit"/>
     <Quote :dataQuote="dataQuote"/>
