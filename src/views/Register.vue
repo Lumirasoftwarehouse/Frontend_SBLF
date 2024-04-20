@@ -1,7 +1,7 @@
 <script setup>
 import Navbar from "../components/landingPage/NavbarComponent.vue";
 import Jumbotron from "../components/landingPage/JumbotronComponent.vue";
-import OBIP from "../components/landingPage/OBIP.vue";
+import Register from "../components/landingPage/Register.vue";
 import Footer from "../components/landingPage/FooterComponent.vue";
 
 
@@ -9,6 +9,6 @@ import Footer from "../components/landingPage/FooterComponent.vue";
 <template>
     <Navbar/>
     <Jumbotron/>
-    <OBIP/>
+    <Register/>
     <Footer/>
 </template>

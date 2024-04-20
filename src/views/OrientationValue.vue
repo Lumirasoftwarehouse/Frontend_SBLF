@@ -2,6 +2,7 @@
 import Navbar from "../components/landingPage/NavbarComponent.vue";
 import Jumbotron from "../components/landingPage/JumbotronComponent.vue";
 import OrientationValue from "../components/landingPage/OrientationValue.vue";
+import Footer from "../components/landingPage/FooterComponent.vue";
 
 import { ref, onMounted } from 'vue';
 import axios from 'axios';
@@ -26,4 +27,5 @@ onMounted(async () => {
     <Navbar/>
     <Jumbotron/>
     <OrientationValue :dataValue="dataValue"/>
+    <Footer/>
 </template>

@@ -75,11 +75,6 @@ export default {
 </script>
 
 <style scoped>
-@media (min-width: 768px) {
-  .chat-container{
-    display: none !important;
-  }
-}
 .chat-container {
   position: fixed;
   bottom: 20px;
@@ -87,7 +82,7 @@ export default {
   display: flex;
   flex-direction: row-reverse;
   align-items: flex-end;
-  z-index: 1;
+  z-index: 2;
 }
 
 .whatsapp-icon {

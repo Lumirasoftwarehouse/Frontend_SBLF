@@ -9,6 +9,7 @@ import BenefitProgram from "../components/landingPage/BenefitProgram.vue";
 import Opportunity from "../components/landingPage/Opportunity.vue";
 import Berita from "../components/landingPage/backup/BeritaComponent.vue";
 import Footer from "../components/landingPage/FooterComponent.vue";
+import ChatMe from "../components/ChatMe.vue";
 
 import { ref, onMounted } from 'vue';
 import axios from 'axios';
@@ -37,6 +38,7 @@ onMounted(async () => {
 
 </script>
 <template>
+    <ChatMe />
     <Navbar/>
     <Jumbotron/>
     <Opportunity :dataOpportunity="dataOpportunity"/>

@@ -29,10 +29,19 @@ const router = createRouter({
       component: () => import('../views/OBIP.vue')
     },
     {
+      path: '/register',
+      name: 'register',
+      component: () => import('../views/Register.vue')
+    },
+    {
       path: '/login',
       name: 'login',
       component: () => import('../views/LoginView.vue')
     },
+
+
+
+    // admin
     {
       path: '/admin-dashboard',
       name: 'admin-dashboard',
@@ -77,6 +86,11 @@ const router = createRouter({
       path: '/admin-client',
       name: 'admin-client',
       component: () => import('../views/admin/ClientPartner.vue')
+    },    
+    {
+      path: '/admin-register',
+      name: 'admin-register',
+      component: () => import('../views/admin/Register.vue')
     },    
   ]
 })

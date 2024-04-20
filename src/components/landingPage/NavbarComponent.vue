@@ -66,26 +66,17 @@
             >
           </li>
           <li class="nav-item">
-            <a
-              class="nav-link menu"
-              :class="{ active: activeLink === 'contact' }"
-              @click="setActive('contact')"
-              href="#berita"
-              >CONTACT US</a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#berita">
-              <button
-                class="btn"
-                style="
+            <router-link
+              class="btn"
+              :to="{ name: 'register' }"
+              v-bind:class="{ active: activeLink === 'register' }"
+              @click="setActive('register')"
+              style="
                   background: linear-gradient(to right, #2a3798, #0995dd);
                   color: white;
                 "
-              >
-                Register
-              </button>
-            </a>
+              >REGISTER</router-link
+            >
           </li>
         </ul>
       </div>
@@ -95,31 +86,31 @@
 
 <script>
 import { useStore } from "vuex";
+import { mapState, mapMutations } from "vuex";
+
 export default {
-  data() {
-    return {
-      isNavbarOpen: false,
-      activeLink: null,
-    };
-  },
   computed: {
+    ...mapState(['activeLink']),
     navbarClass() {
       return {
         collapse: !this.isNavbarOpen,
         "navbar-collapse": true,
       };
-    },
+    }
   },
   methods: {
+    ...mapMutations(['setActiveLink']),
     toggleNavbar() {
       this.isNavbarOpen = !this.isNavbarOpen;
     },
     setActive(link) {
-      this.activeLink = link;
+      // Memanggil mutasi setActiveLink dari store Vuex
+      this.setActiveLink(link);
     },
   },
 };
 </script>
+
 
 <style scoped>
 .menu {

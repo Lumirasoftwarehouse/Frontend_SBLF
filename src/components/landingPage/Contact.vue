@@ -7,22 +7,22 @@
         </div>
         <div class="col-sm-3">
             <h5>How We Can Help</h5>
-            <p>Currently supported conditions</p>
-            <p>Our customers</p>
+            <h6>Currently supported conditions</h6>
+            <h6>Our customers</h6>
         </div>
         <div class="col-sm-3">
             <h5>Partner</h5>
-            <p>Becom a partner</p>
-            <p>Feature</p>
-            <p>Create your event or business</p>
+            <h6>Becom a partner</h6>
+            <h6>Feature</h6>
+            <h6>Create your event or business</h6>
         </div>
         <div class="col-sm-4">
             <h5>Get In Touch</h5>
-            <!-- icon email--> <p>Sblfberdikari@gmail.com</p>
-            <!-- icon telephon --> <p>+628231188229</p>
-            <!-- icon alamat --> <p>JL. Wijaya II No.5, Rt.03/Rw.01, Pulo</p>
-            <p>Kec. Kebayoran Baru, Kota Jakarta Selatan</p>
-            <p>Daerah Khusus Ibukota Jakarta 12160</p>
+            <h6><i class="bi bi-envelope-fill"></i> Sblfberdikari@gmail.com</h6>
+        <h6><i class="bi bi-telephone-fill"></i> +6282311898229</h6>
+        <h6><i class="bi bi-geo-alt-fill"></i> Jl. Wijaya II No.5, RT.03/RW.01, Pulo</h6>
+        <h6>Kec. Kebayoran Baru, Kota Jakarta Selatan</h6>
+        <h6>Daerah Khusus Ibukota Jakarta 12160</h6>
         </div>
       </div>
     </div>
@@ -46,8 +46,8 @@ export default {
     padding: 20px;
     background-image: url('/img/clientBG.png');
 }
-p{
-  color: white;
+h6{
+  color: #d8d8d8;
   margin: 0;
   padding: 0;
 }

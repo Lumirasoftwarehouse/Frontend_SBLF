@@ -1,18 +1,10 @@
 <script setup>
 import Navbar from "../components/landingPage/NavbarComponent.vue";
 import Jumbotron from "../components/landingPage/JumbotronComponent.vue";
-import GlobalTrends from "../components/landingPage/GlobalTrends.vue";
-import Quote from "../components/landingPage/Quote.vue";
-import OrientationValue from "../components/landingPage/OrientationValue.vue";
-import ClientPartner from "../components/landingPage/ClientPartner.vue";
-import Register from "../components/landingPage/Register.vue";
-import Contact from "../components/landingPage/Contact.vue";
 import About from "../components/landingPage/About.vue";
 import VisiMisi from "../components/landingPage/VisiMisi.vue";
-import BenefitProgram from "../components/landingPage/BenefitProgram.vue";
-import Opportunity from "../components/landingPage/Opportunity.vue";
-import Berita from "../components/landingPage/backup/BeritaComponent.vue";
 import Footer from "../components/landingPage/FooterComponent.vue";
+
 
 import { ref, onMounted } from 'vue';
 import axios from 'axios';
@@ -42,4 +34,5 @@ onMounted(async () => {
     <Jumbotron/>
     <About :dataAbout="dataAbout"/>
     <VisiMisi :dataVisi="dataVisi" :dataMisi="dataMisi"/>
+    <Footer/>
 </template>

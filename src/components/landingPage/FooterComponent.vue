@@ -1,66 +1,58 @@
 <template>
-  <footer class="text-light py-5">
+  <div class="contact bg-light mt-5">
     <div class="container">
       <div class="row">
-        <div class="col-md-6">
-          <h2 class="mb-4">Contact</h2>
-          <ul class="list-unstyled">
-            <li><i class="bi bi-instagram"></i> <a href="https://www.instagram.com/sblf.id/" class="text-light" target="_blank">sblf.id</a></li>
-            <li><i class="bi bi-globe"></i> <a href="http://www.sblf.id.com/" class="text-light" target="_blank">www.sblf.id.com</a></li>
-            <li><i class="bi bi-envelope"></i> <a href="mailto:sblf.id@gmail.com" class="text-light">sblf.id@gmail.com</a></li>
-            <li><i class="bi bi-geo-alt"></i> Bandung, Indonesia</li>
-          </ul>
+        <div class="col-sm-2">
+            <img src="/img/logo.png" alt="">
         </div>
-        <div class="col-md-6 text-md-end">
-          <p>&copy; Strategic Business Leaders Forum - 2024</p>
+        <div class="col-sm-3">
+            <h5>How We Can Help</h5>
+            <h6>Currently supported conditions</h6>
+            <h6>Our customers</h6>
+        </div>
+        <div class="col-sm-3">
+            <h5>Partner</h5>
+            <h6>Becom a partner</h6>
+            <h6>Feature</h6>
+            <h6>Create your event or business</h6>
+        </div>
+        <div class="col-sm-4">
+            <h5>Get In Touch</h5>
+            <h6><i class="bi bi-envelope-fill"></i> Sblfberdikari@gmail.com</h6>
+        <h6><i class="bi bi-telephone-fill"></i> +6282311898229</h6>
+        <h6><i class="bi bi-geo-alt-fill"></i> Jl. Wijaya II No.5, RT.03/RW.01, Pulo</h6>
+        <h6>Kec. Kebayoran Baru, Kota Jakarta Selatan</h6>
+        <h6>Daerah Khusus Ibukota Jakarta 12160</h6>
         </div>
       </div>
     </div>
-  </footer>
+  </div>
 </template>
 
 <script>
 export default {
   data() {
     return {
-      shouldShowImage: false,
+      
     };
-  },
-  mounted() {
-    window.addEventListener("scroll", this.handleScroll);
-  },
-  beforeDestroy() {
-    window.removeEventListener("scroll", this.handleScroll);
-  },
-  methods: {
-    handleScroll() {
-      const scrollTop =
-        window.pageYOffset ||
-        document.documentElement.scrollTop ||
-        document.body.scrollTop;
-
-      this.shouldShowImage = scrollTop > 0;
-    },
   },
 };
 </script>
 
 <style scoped>
-footer{
-  background-color: #000064
-}
-
 .contact {
-  font-size: 24px;
-  font-weight: bold;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    background-image: url('/img/clientBG.png');
 }
-
-.scroll-to-top {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  display: none;
-  z-index: 1000;
-  cursor: pointer;
+h6{
+  color: #d8d8d8;
+  margin: 0;
+  padding: 0;
+}
+h5{
+  font-weight: bold;
+  color: white;
 }
 </style>
