@@ -1,5 +1,5 @@
 <template>
-  <div class="orientationValue bg-light">
+  <div class="orientationValue bg-white">
     <div class="container">
       <h2 class="text-center">ORIENTATION VALUE</h2>
       <div class="row">

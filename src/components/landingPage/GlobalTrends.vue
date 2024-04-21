@@ -1,5 +1,5 @@
 <template>
-  <div class="globalTrends bg-light">
+  <div class="globalTrends bg-white">
     <div class="container">
       <h2 class="text-center">GLOBAL TRENDS</h2>
       <div class="card-container">
