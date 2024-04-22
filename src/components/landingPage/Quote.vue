@@ -1,15 +1,17 @@
 <template>
-  <div class="container-fluid position-relative"> <!-- Tambahkan kelas position-relative -->
-    <div class="overlay"></div> <!-- Tambahkan overlay transparan di sini -->
+  <div class="container-fluid">
     <div class="row align-items-center">
-      <div class="col-3 mb-3"> <!-- Kolom kiri -->
+      <div class="col-2 mb-3"> <!-- Kolom kiri -->
+      <img src="/img/kiri.png" alt="kiri" style="margin-left:-90px;">
       </div>
-      <div class="col-6 mb-3"> <!-- Kolom tengah -->
+      <div class="col-8 mb-3"> <!-- Kolom tengah -->
       <h3 class="text-center">{{dataQuote}}</h3>
       </div>
-      <div class="col-3"> <!-- Kolom kanan -->
+      <div class="col-2"> <!-- Kolom kanan -->
+      <img src="/img/kanan.png" style="margin-right: -100px;" alt="kanan">
       </div>
     </div>
+
   </div>
 </template>
 <script>
@@ -24,25 +26,6 @@ export default {
 </script>
 
 <style scoped>
-.container-fluid {
-  /* Letakkan gambar di belakang overlay dengan menggunakan z-index yang lebih rendah */
-  background-color: #4953ae;
-  background-image: url('/img/batik.jpg');
-  background-size: initial;
-  /* filter: grayscale(100%); */
-  z-index: 0;
-}
-
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #adacac80; /* Warna transparan yang buram */
-  z-index: 1; /* Letakkan overlay di atas gambar dengan menggunakan z-index yang lebih tinggi */
-}
-
 h3 {
   margin-top: 20px;
   color: #000000;
