@@ -11,7 +11,6 @@
       <img src="/img/kanan.png" style="margin-right: -100px;" alt="kanan">
       </div>
     </div>
-
   </div>
 </template>
 <script>

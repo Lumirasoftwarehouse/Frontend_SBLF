@@ -133,7 +133,7 @@ export default {
         async tambahAbout() {
       try {
         const response = await axios.post(
-          "http://127.0.0.1:8000/api/auth/create-about",
+          "https://backend-sblf.lumirainternational.com/api/auth/create-about",
           {
             about: this.newAbout
           },
@@ -157,7 +157,7 @@ export default {
         this.ready = false;
       try {
         const response = await axios.get(
-          "http://127.0.0.1:8000/api/auth/get-about",
+          "https://backend-sblf.lumirainternational.com/api/auth/get-about",
           {
             headers: {
               Authorization: `Bearer ${sessionStorage.getItem("token")}`
@@ -173,9 +173,9 @@ export default {
     },
     showAlert(title, text, icon) {
       this.$swal({
-        title: "Request Success",
-        text: "Data Berhasil Dikirim!",
-        icon: "success", // Atau gunakan icon lain sesuai kebutuhan
+        title: title,
+        text: text,
+        icon: icon, // Atau gunakan icon lain sesuai kebutuhan
       }).then(() => {
         $("#addAbout").modal("hide");
       });
