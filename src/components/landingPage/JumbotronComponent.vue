@@ -1,9 +1,41 @@
 <template>
   <div class="jumbotron" id="/">
-    <img src="/img/jumbotron.png" alt="home" class="jumbotron-image" />
+    <img 
+    :src="`/img/${page == 'home' ? 
+    'jumbotron.png' : 
+    page == 'about' ? 
+    'about.webp' : 
+    page == 'program' ? 
+    'program.webp' : 
+     page == 'service' ?
+    'service.webp' : 
+    page == 'daftar' ?
+    'daftar.webp' :
+    page == 'anggota' ?
+          'anggota.webp' : 
+    page == 'pengurus' ?
+          'pengurus.webp' : 
+          ''}`"
+
+    alt="home" 
+
+
+    :height="`${page != 'home' ? '500' :
+   ''}`"
+    class="jumbotron-image" />
     <div class="lengkung bg-white"></div>
   </div>
 </template>
+<script>
+export default {
+  props: {
+    page: {
+      type: String,
+      default: '',
+    },
+  },
+};
+</script>
 
 <style scoped>
 .jumbotron {

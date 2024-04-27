@@ -44,15 +44,15 @@ export default {
     width: 100%;
     margin: 0 auto;
     padding: 20px;
-    background-image: url('/img/clientBG.png');
+    /* background-image: url('/img/clientBG.png'); */
 }
 h6{
-  color: #d8d8d8;
+  color: #888787;
   margin: 0;
   padding: 0;
 }
 h5{
   font-weight: bold;
-  color: white;
+  color: rgb(100, 100, 100);
 }
 </style>

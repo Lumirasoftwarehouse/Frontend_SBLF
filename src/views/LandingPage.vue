@@ -40,11 +40,11 @@ onMounted(async () => {
 <template>
     <ChatMe />
     <Navbar/>
-    <Jumbotron/>
+    <Jumbotron page="home"/>
     <Opportunity :dataOpportunity="dataOpportunity"/>
     <BenefitProgram :dataBenefit="dataBenefit"/>
     <Quote :dataQuote="dataQuote"/>
     <ClientPartner :dataClient="dataClient"/>
     <Register/>
-    <Contact/>
+    <Footer/>
 </template>

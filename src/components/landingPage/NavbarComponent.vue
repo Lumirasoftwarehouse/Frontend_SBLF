@@ -4,7 +4,7 @@
   >
     <div class="container">
       <a class="navbar-brand" href="#">
-        <img src="../../../public/img/logo.png" alt="sblf" />
+        <img src="/img/logo.png" alt="sblf" />
       </a>
       <button
         class="navbar-toggler"
@@ -25,7 +25,7 @@
               :to="{ name: 'landing-page' }"
               v-bind:class="{ active: activeLink === 'home' }"
               @click="setActive('home')"
-              >HOME</router-link
+              >BERANDA</router-link
             >
             
           </li>
@@ -35,47 +35,56 @@
               :to="{ name: 'about-us' }"
               v-bind:class="{ active: activeLink === 'about' }"
               @click="setActive('about')"
-              >ABOUT US</router-link
+              >TENTANG KAMI</router-link
             >
           </li>
           <li class="nav-item">
              <router-link
               class="nav-link menu"
-              :to="{ name: 'global-trend' }"
-              v-bind:class="{ active: activeLink === 'trends' }"
-              @click="setActive('trends')"
-              >GLOBAL TRENDS</router-link
+              :to="{ name: 'program' }"
+              v-bind:class="{ active: activeLink === 'program' }"
+              @click="setActive('program')"
+              >PROGRAM</router-link
+            >
+          </li>
+                    <li class="nav-item">
+             <router-link
+              class="nav-link menu"
+              :to="{ name: 'services' }"
+              v-bind:class="{ active: activeLink === 'services' }"
+              @click="setActive('services')"
+              >SERVICES</router-link
             >
           </li>
           <li class="nav-item">
              <router-link
               class="nav-link menu"
-              :to="{ name: 'orientation-value' }"
-              v-bind:class="{ active: activeLink === 'values' }"
-              @click="setActive('values')"
-              >ORIENTATION VALUES</router-link
+              :to="{ name: 'anggota' }"
+              v-bind:class="{ active: activeLink === 'anggota' }"
+              @click="setActive('anggota')"
+              >ANGGOTA</router-link
             >
           </li>
           <li class="nav-item">
              <router-link
               class="nav-link menu"
-              :to="{ name: 'obip' }"
-              v-bind:class="{ active: activeLink === 'obip' }"
-              @click="setActive('obip')"
-              >OBIP</router-link
+              :to="{ name: 'pengurus' }"
+              v-bind:class="{ active: activeLink === 'pengurus' }"
+              @click="setActive('pengurus')"
+              >PENGURUS</router-link
             >
           </li>
           <li class="nav-item">
             <router-link
               class="btn"
-              :to="{ name: 'register' }"
-              v-bind:class="{ active: activeLink === 'register' }"
-              @click="setActive('register')"
+              :to="{ name: 'daftar' }"
+              v-bind:class="{ active: activeLink === 'daftar' }"
+              @click="setActive('daftar')"
               style="
                   background: linear-gradient(to right, #2a3798, #0995dd);
                   color: white;
                 "
-              >REGISTER</router-link
+              >DAFTAR</router-link
             >
           </li>
         </ul>

@@ -25,6 +25,9 @@ export default {
 </script>
 
 <style scoped>
+    .container{
+      font-family: Helvetica, Arial, sans-serif !important;
+    }
 @media only screen and (max-width: 600px) {
   h2 {
     font-size: 35px !important;
