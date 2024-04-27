@@ -1,1 +1,0 @@
-import{N as r,J as t,F as e}from"./FooterComponent-c96b57cd.js";import{R as o}from"./Register-263b128e.js";import{o as s,c as m,f as a,F as p}from"./index-9b05ed8e.js";import"./logo-42795f0e.js";import"./sweetalert2.all-749d8cbc.js";const d={__name:"Daftar",setup(c){return(n,f)=>(s(),m(p,null,[a(r),a(t,{page:"daftar"}),a(o),a(e)],64))}};export{d as default};

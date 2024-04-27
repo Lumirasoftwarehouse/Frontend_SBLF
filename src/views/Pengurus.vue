@@ -1,6 +1,6 @@
 <script setup>
 import Navbar from "../components/landingPage/NavbarComponent.vue";
-import Jumbotron from "../components/landingPage/JumbotronComponent.vue";
+import Header from "../components/landingPage/HeaderComponent.vue";
 import Pengurus from "../components/landingPage/Pengurus.vue";
 import Footer from "../components/landingPage/FooterComponent.vue";
 
@@ -25,7 +25,7 @@ onMounted(async () => {
 </script>
 <template>
     <Navbar/>
-    <Jumbotron page="pengurus"/>
+  <Header page="pengurus" text="Pengurus Strategic Business Leaders Forum"/>
     <Pengurus :dataValue="dataValue"/>
     <Footer/>
 </template>

@@ -1,6 +1,6 @@
 <script setup>
 import Navbar from "../components/landingPage/NavbarComponent.vue";
-import Jumbotron from "../components/landingPage/JumbotronComponent.vue";
+import Header from "../components/landingPage/HeaderComponent.vue";
 import Anggota from "../components/landingPage/Anggota.vue";
 import Footer from "../components/landingPage/FooterComponent.vue";
 
@@ -25,7 +25,7 @@ onMounted(async () => {
 </script>
 <template>
     <Navbar/>
-    <Jumbotron page="anggota"/>
+  <Header page="anggota" text="Anggota Strategic Business Leaders Forum"/>
     <Anggota :dataValue="dataValue"/>
     <Footer/>
 </template>

@@ -1,6 +1,6 @@
 <script setup>
 import Navbar from "../components/landingPage/NavbarComponent.vue";
-import Jumbotron from "../components/landingPage/JumbotronComponent.vue";
+import Header from "../components/landingPage/HeaderComponent.vue";
 import Service from "../components/landingPage/Service.vue";
 import Footer from "../components/landingPage/FooterComponent.vue";
 
@@ -25,7 +25,7 @@ onMounted(async () => {
 </script>
 <template>
     <Navbar/>
-    <Jumbotron page="service"/>
+  <Header page="service" text="Service Strategic Business Leaders Forum"/>
     <Service :dataTrend="dataTrend"/>
     <Footer/>
 </template>

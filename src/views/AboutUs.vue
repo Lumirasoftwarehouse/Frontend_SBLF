@@ -1,6 +1,6 @@
 <script setup>
 import Navbar from "../components/landingPage/NavbarComponent.vue";
-import Jumbotron from "../components/landingPage/JumbotronComponent.vue";
+import Header from "../components/landingPage/HeaderComponent.vue";
 import About from "../components/landingPage/About.vue";
 import VisiMisi from "../components/landingPage/VisiMisi.vue";
 import GlobalTrends from "../components/landingPage/GlobalTrends.vue";
@@ -35,7 +35,7 @@ onMounted(async () => {
 </script>
 <template>
   <Navbar />
-  <Jumbotron page="about"/>
+  <Header page="about" text="Tentang Strategic Business Leaders Forum"/>
   <About :dataAbout="dataAbout" />
   <VisiMisi :dataVisi="dataVisi" :dataMisi="dataMisi" />
   <GlobalTrends :dataTrend="dataTrend" />
