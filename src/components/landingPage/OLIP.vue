@@ -117,7 +117,6 @@ export default {
 <style scoped>
     .container{
       font-family: Helvetica, Arial, sans-serif !important;
-      color: black;
     }
 .landing-page {
   font-family: "Arial", sans-serif;

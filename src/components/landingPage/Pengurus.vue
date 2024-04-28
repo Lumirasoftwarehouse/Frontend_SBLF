@@ -35,9 +35,11 @@
 </template>
 
 <style scoped>
-    .container{
+.container{
       font-family: Helvetica, Arial, sans-serif !important;
+      color: black;
     }
+
 .team-section {
       padding: 80px 0;
       text-align: center;

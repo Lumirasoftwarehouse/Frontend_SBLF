@@ -33,6 +33,10 @@ export default {
 </script>
 
 <style scoped>
+.container{
+      font-family: Helvetica, Arial, sans-serif !important;
+      color: black;
+    }
 .opportunity {
   padding-top: 50px;
   padding-bottom: 50px;

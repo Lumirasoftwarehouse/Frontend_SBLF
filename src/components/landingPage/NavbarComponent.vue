@@ -27,7 +27,6 @@
               @click="setActive('home')"
               >BERANDA</router-link
             >
-            
           </li>
           <li class="nav-item">
             <router-link
@@ -39,25 +38,37 @@
             >
           </li>
           <li class="nav-item">
-             <router-link
-              class="nav-link menu"
-              :to="{ name: 'program' }"
-              v-bind:class="{ active: activeLink === 'program' }"
-              @click="setActive('program')"
-              >PROGRAM</router-link
-            >
-          </li>
-                    <li class="nav-item">
-             <router-link
-              class="nav-link menu"
-              :to="{ name: 'services' }"
-              v-bind:class="{ active: activeLink === 'services' }"
-              @click="setActive('services')"
-              >SERVICES</router-link
-            >
+            <div class="dropdown">
+              <router-link
+                  class="nav-link menu dropdown-toggle"
+                  :to="{ name: 'obip' }"
+                  data-toggle="dropdown"
+                aria-expanded="false"
+                  >PROGRAM</router-link
+                >
+              <div class="dropdown-menu">
+                <router-link
+                  class="dropdown-item"
+                  :to="{ name: 'obip' }"
+                  v-bind:class="{ active: activeLink === 'obip' }"
+                  @click="setActive('obip')"
+                  >OBIP</router-link
+                >
+                <a class="dropdown-item" href="#">SLIP</a>
+              </div>
+            </div>
           </li>
           <li class="nav-item">
-             <router-link
+            <router-link
+                  class="nav-link menu"
+                  :to="{ name: 'services' }"
+                  v-bind:class="{ active: activeLink === 'services' }"
+                  @click="setActive('services')"
+                  >SERVICES</router-link
+                >
+          </li>
+          <li class="nav-item">
+            <router-link
               class="nav-link menu"
               :to="{ name: 'anggota' }"
               v-bind:class="{ active: activeLink === 'anggota' }"
@@ -66,7 +77,7 @@
             >
           </li>
           <li class="nav-item">
-             <router-link
+            <router-link
               class="nav-link menu"
               :to="{ name: 'pengurus' }"
               v-bind:class="{ active: activeLink === 'pengurus' }"
@@ -81,9 +92,9 @@
               v-bind:class="{ active: activeLink === 'daftar' }"
               @click="setActive('daftar')"
               style="
-                  background: linear-gradient(to right, #2a3798, #0995dd);
-                  color: white;
-                "
+                background: linear-gradient(to right, #2a3798, #0995dd);
+                color: white;
+              "
               >DAFTAR</router-link
             >
           </li>
@@ -99,16 +110,16 @@ import { mapState, mapMutations } from "vuex";
 
 export default {
   computed: {
-    ...mapState(['activeLink']),
+    ...mapState(["activeLink"]),
     navbarClass() {
       return {
         collapse: !this.isNavbarOpen,
         "navbar-collapse": true,
       };
-    }
+    },
   },
   methods: {
-    ...mapMutations(['setActiveLink']),
+    ...mapMutations(["setActiveLink"]),
     toggleNavbar() {
       this.isNavbarOpen = !this.isNavbarOpen;
     },

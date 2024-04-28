@@ -6,7 +6,7 @@
         :src="`/img/${
           page == 'about' ? 
             'about.webp' : 
-          page == 'program' ? 
+          page == 'obip' || page == 'olip' ? 
             'program.webp' : 
           page == 'service' ?
             'service.webp' : 
@@ -18,7 +18,7 @@
           'pengurus.webp' : 
           ''}`"
         alt="home" 
-        height="400"
+        height="500"
         class="jumbotron-image" />
       <h1 class="test-text">{{text}}</h1>
     </div>

@@ -46,6 +46,11 @@ export default {
 </script>
 
 <style scoped>
+.container{
+      font-family: Helvetica, Arial, sans-serif !important;
+      color: black;
+    }
+    
 .orientationValue {
   padding: 20px;
 }

@@ -43,6 +43,10 @@
 </template>
 
 <style scoped>
+.container{
+      font-family: Helvetica, Arial, sans-serif !important;
+      color: black;
+    }
  .member-section {
       padding: 80px 0;
       text-align: center;

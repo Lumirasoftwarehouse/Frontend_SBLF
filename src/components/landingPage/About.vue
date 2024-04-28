@@ -1,5 +1,5 @@
 <template>
-  <div class="container" id="about">
+  <div class="container pt-4" id="about">
           <h2 class="text-center">About Us</h2>
           <div class="row">
             <div class="col-sm-6">
@@ -27,6 +27,7 @@ export default {
 <style scoped>
     .container{
       font-family: Helvetica, Arial, sans-serif !important;
+      color: black;
     }
 @media only screen and (max-width: 600px) {
   h2 {

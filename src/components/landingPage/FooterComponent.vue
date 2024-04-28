@@ -40,6 +40,10 @@ export default {
 </script>
 
 <style scoped>
+.container{
+      font-family: Helvetica, Arial, sans-serif !important;
+      /* color: black; */
+    }
 .contact {
     width: 100%;
     margin: 0 auto;

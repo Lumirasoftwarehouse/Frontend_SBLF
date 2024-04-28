@@ -25,6 +25,10 @@ export default {
 </script>
 
 <style scoped>
+.container{
+      font-family: Helvetica, Arial, sans-serif !important;
+      color: black;
+    }
 .card-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);

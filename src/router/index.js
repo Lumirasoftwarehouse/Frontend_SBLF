@@ -24,9 +24,9 @@ const router = createRouter({
       component: () => import('../views/Pengurus.vue')
     },
     {
-      path: '/program',
-      name: 'program',
-      component: () => import('../views/Program.vue')
+      path: '/obip',
+      name: 'obip',
+      component: () => import('../views/Obip.vue')
     },
     {
       path: '/daftar',

@@ -43,6 +43,10 @@ export default {
 </script>
 
 <style scoped>
+.container{
+      font-family: Helvetica, Arial, sans-serif !important;
+      color: black;
+    }
 .template {
   padding-top: 80px;
   background-color: #f8f9fa; /* Warna latar belakang disesuaikan */
