@@ -18,9 +18,9 @@
           'pengurus.webp' : 
           ''}`"
         alt="home" 
-        height="500"
+        height="600"
         class="jumbotron-image" />
-      <h1 class="test-text">{{text}}</h1>
+      <h1 class="test-text fw-bold">{{text}}</h1>
     </div>
   </div>
 </div>
@@ -42,9 +42,12 @@ export default {
 </script>
 
 <style scoped>
+.jumbotron{
+      font-family: Helvetica, Arial, sans-serif !important;
+    }
 .test-text{
   z-index: 2;
-  margin-top: -200px;
+  margin-top: -300px;
   margin-bottom: 150px;
   color: white; /* Ubah warna teks menjadi putih */
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Tambahkan efek bayangan pada teks */

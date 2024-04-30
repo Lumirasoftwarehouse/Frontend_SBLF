@@ -3,7 +3,7 @@
     <div class="container">
       <div class="row">
         <div class="col-sm-12">
-          <h2 class="portfolio" data-aos="fade-down" data-aos-duration="1000">Opportunity</h2>
+          <h2 class="portfolio mb-3" data-aos="fade-down" data-aos-duration="1000">Opportunity</h2>
         </div>
       </div>
       <div class="row">

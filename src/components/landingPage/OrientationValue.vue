@@ -1,16 +1,16 @@
 <template>
   <div class="orientationValue bg-white">
     <div class="container">
-      <h2 class="text-center">ORIENTATION VALUE</h2>
+      <h2 class="text-center fw-bold">ORIENTATION VALUE</h2>
       <div class="row">
         <!-- Kolom pertama dengan satu card -->
         <div class="col-sm-6" v-if="dataValue.length > 0">
           <div class="card">
             <div class="card-content">
               <img :src="`https://backend-sblf.lumirainternational.com/storage/orientationValue/${dataValue[0].image}`" alt="Card Image" />
-              <div class="blue-box">
-                <p>{{dataValue[0].judul}}</p>
-              </div>
+              <!-- <div class="blue-box">
+              </div> -->
+                <p class="text-center">{{dataValue[0].judul}}</p>
             </div>
           </div>
         </div>
@@ -21,9 +21,9 @@
               <div class="card">
                 <div class="card-content">
                   <img :src="`https://backend-sblf.lumirainternational.com/storage/orientationValue/${item.image}`" alt="Card Image" />
-                  <div class="blue-box">
-                    <p>{{ item.judul }}</p>
-                  </div>
+                  <!-- <div class="blue-box">
+                  </div> -->
+                    <p class="text-center">{{ item.judul }}</p>
                 </div>
               </div>
             </div>
@@ -62,6 +62,7 @@ export default {
 }
 
 .card {
+  border: none;
   position: relative;
   margin-bottom: 20px;
 }

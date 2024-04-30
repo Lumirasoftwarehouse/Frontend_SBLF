@@ -1,11 +1,11 @@
 <template>
   <div class="globalTrends bg-white">
   <div class="container">
-    <h2 class="text-center">GLOBAL TRENDS</h2>
+    <h2 class="text-center fw-bold">GLOBAL TRENDS</h2>
     <div class="card-container">
       <div class="card" v-for="item in dataTrend" :key="item.id">
         <img :src="`https://backend-sblf.lumirainternational.com/storage/globalTrend/${item.image}`" alt="Card Image" />
-        <h5 class="fw-bold">{{ item.judul }}</h5>
+        <h5 class="mt-2">{{ item.judul }}</h5>
       </div>
     </div>
   </div>

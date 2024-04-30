@@ -33,7 +33,7 @@
           }}</span>
           <!-- <img class="img-profile rounded-circle" src="/img/nobi.jpg" /> -->
           <img
-            :src="'http://127.0.0.1:8000/storage/profile/' + gambar"
+            :src="'https://backend-sblf.lumirainternational.com/storage/profile/' + gambar"
             alt=" gambarprofile"
             class="img-profile rounded-circle"
           />
@@ -118,7 +118,7 @@ export default {
       }
 
       axios
-        .post(`http://127.0.0.1:8000/api/auth/logout`, null, {
+        .post(`https://backend-sblf.lumirainternational.com/api/auth/logout`, null, {
           headers: {
             Authorization: "Bearer " + token,
           },

@@ -156,7 +156,7 @@
   <li class="nav-item">
     <router-link
       class="nav-link text-primary"
-      to="/admin-members"
+      to="/admin-anggota"
       active-class="font-weight-bold text-primary active-link"
     >
       <i class="bi bi-people text-primary"></i>
@@ -168,7 +168,7 @@
   <li class="nav-item">
     <router-link
       class="nav-link text-primary"
-      to="/admin-executives"
+      to="/admin-pengurus"
       active-class="font-weight-bold text-primary active-link"
     >
       <i class="bi bi-person-circle text-primary"></i>

@@ -23,6 +23,10 @@ export default {
 </script>
 
 <style scoped>
+.container{
+      font-family: Helvetica, Arial, sans-serif !important;
+    }
+
 .clientPartner {
   width: 100%;
   margin: 0 auto;

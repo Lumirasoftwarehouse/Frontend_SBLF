@@ -97,6 +97,21 @@ const router = createRouter({
       name: 'admin-register',
       component: () => import('../views/admin/Register.vue')
     },    
+    {
+      path: '/admin-service',
+      name: 'admin-service',
+      component: () => import('../views/admin/Service.vue')
+    },    
+    {
+      path: '/admin-anggota',
+      name: 'admin-anggota',
+      component: () => import('../views/admin/Anggota.vue')
+    },    
+    {
+      path: '/admin-pengurus',
+      name: 'admin-pengurus',
+      component: () => import('../views/admin/Pengurus.vue')
+    },    
   ]
 })
 

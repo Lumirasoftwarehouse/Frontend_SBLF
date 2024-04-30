@@ -2,7 +2,7 @@
   <div class="template" id="benefit">
     <div class="container">
       <div class="row">
-        <p class="feature text-white" data-aos="fade-down" data-aos-duration="1000">Benefits & Programs</p>
+        <p class="feature text-black" data-aos="fade-down" data-aos-duration="1000">Benefits & Programs</p>
       </div>
       <div class="row">
         <div class="col-md-4 mb-4" v-for="(benefit, index) in dataBenefit" :key="index">
@@ -30,6 +30,10 @@ export default {
 </script>
 
 <style scoped>
+.container{
+      font-family: Helvetica, Arial, sans-serif !important;
+      color: black;
+    }
 .template {
   position: relative; /* Membuat posisi relatif untuk konten di dalamnya */
   padding-top: 50px;
@@ -44,7 +48,7 @@ export default {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('img/bismillah.png'); /* Ganti dengan URL gambar latar belakang */
+  background-image: url('img/about.webp'); /* Ganti dengan URL gambar latar belakang */
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -59,6 +63,7 @@ export default {
   font-size: 24px;
   line-height: 33px;
   text-align: center;
+  z-index: 2 !important;
 }
 
 .card {

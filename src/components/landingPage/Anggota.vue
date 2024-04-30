@@ -1,6 +1,6 @@
 <template>
  <div class="container member-section">
-  <h2 class="mb-5">Our Members</h2>
+  <h2 class="mb-5 fw-bold">Our Members</h2>
   <div class="row">
     <div class="col-md-6 col-lg-3">
       <div class="member">
@@ -53,7 +53,7 @@
     }
     .member {
       margin-bottom: 40px;
-      background-color: #fff;
+      background-color: lightblue;
       border-radius: 10px;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
       transition: transform 0.3s;

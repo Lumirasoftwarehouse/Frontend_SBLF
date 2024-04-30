@@ -1,7 +1,7 @@
 <template>
   <div class="globalTrends bg-white">
   <div class="container">
-    <h2 class="text-center">SERVICES</h2>
+    <h2 class="text-center fw-bold">SERVICES</h2>
     <div class="card-container">
       <div class="card" v-for="item in dataTrend" :key="item.id">
         <img :src="`https://backend-sblf.lumirainternational.com/storage/globalTrend/${item.image}`" alt="Card Image" />
@@ -25,6 +25,10 @@ export default {
 </script>
 
 <style scoped>
+.container{
+      font-family: Helvetica, Arial, sans-serif !important;
+      color: black;
+    }
 .card-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);

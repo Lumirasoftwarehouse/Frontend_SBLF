@@ -5,16 +5,16 @@
         <div class="col-md-12">
           <!-- Visi -->
           <div class="vision-wrapper mb-5">
-            <h3 class="text-primary">Visi</h3>
+            <h3 class="text-primary text-center fw-bold">Visi</h3>
             <p>{{ dataVisi }}</p>
           </div>
         </div>
         <!-- Misi -->
         <div class="col-md-12">
-          <h3 class="text-primary">Misi</h3>
+          <h3 class="text-primary text-center fw-bold">Misi</h3>
           <div class="mission-wrapper">
             <div v-for="(mission, index) in dataMisi" :key="index" class="mission-item">
-              <div class="mission-image" :style="{ backgroundImage: 'url(' + mission.image + ')' }"></div>
+              <div class="mission-image" :style="{ backgroundImage: 'url(/img/misi/'+ index +'.png)' }"></div>
               <div class="mission-details">
                 <h4>{{ mission.title }}</h4>
                 <p class="mission-description">{{ mission.misi }}</p>
@@ -85,7 +85,6 @@ export default {
   background-repeat: no-repeat;
   margin-right: 20px;
   border-radius: 50%; /* Memperhalus gambar */
-  border: 3px solid #220afa; /* Membuat border pada gambar */
 }
 
 .mission-details {

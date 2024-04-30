@@ -60,7 +60,7 @@ const toggleSidebar = () => {
                           class="btn btn-warning me-3"
                           data-toggle="modal"
                           data-target="#updateService"
-                          @click="setDataService(item.id, item.judul)"
+                          @click="setDataService(item.id, item.judul, item.image)"
                         >
                           <i class="bi bi-pencil-square"></i>
                         </button>
@@ -70,7 +70,7 @@ const toggleSidebar = () => {
                       </td>
                       <td>
                          <img
-                          :src="`https://backend-sblf.lumirainternational.com/storage/globalTrend/${item.image}`"
+                          :src="`https://backend-sblf.lumirainternational.com/storage/service/${item.image}`"
                           alt="trend"
                           width="200"
                         />
@@ -105,7 +105,7 @@ const toggleSidebar = () => {
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="addServiceLabel">Tambahkan Trend</h5>
+          <h5 class="modal-title" id="addServiceLabel">Tambahkan Service</h5>
           <button
             type="button"
             class="close"
@@ -183,6 +183,7 @@ const toggleSidebar = () => {
                 id="image"
                 @change="handleFileUpload"
               />
+              <p>{{dataUpdateServices.image}}</p>
             </div>
             <div class="mb-3">
               <label for="judul" class="form-label">Judul</label>
@@ -225,7 +226,7 @@ export default {
         judul:""
       },
       dataUpdateServices: {
-        image:null,
+        image:"",
         judul:""
       },
       services: [],
@@ -237,9 +238,10 @@ export default {
     };
   },
   methods: {
-    setDataService(id, judul){
+    setDataService(id, judul, image){
         this.idTrend = id;
         this.dataUpdateServices.judul = judul;
+        this.dataUpdateServices.image = image;
     },
     async updateService() {
       try {
@@ -247,7 +249,7 @@ export default {
         formData.append("image", this.dataService.image);
         formData.append("judul", this.dataUpdateServices.judul);
         const response = await axios.post(
-          `https://backend-sblf.lumirainternational.com/api/auth/update-trend/${this.idTrend}`,
+          `https://backend-sblf.lumirainternational.com/api/auth/update-service/${this.idTrend}`,
           formData,
           {
             headers: {
@@ -258,10 +260,10 @@ export default {
         console.log(response.data); // Handle response from server
         this.updateService = ""; // Clear input field after successful submission
         this.fetchServices(); // Reload the misi data after adding a new one
-        this.showAlert('Success', 'Trend berhasil diupdate', 'success');
+        this.showAlert('Success', 'Service berhasil diupdate', 'success');
       } catch (error) {
         console.error(error); // Handle error if any
-               this.showAlert('Oops...', 'Terjadi kesalahan saat mengupdate trend', 'error');
+               this.showAlert('Oops...', 'Terjadi kesalahan saat mengupdate service', 'error');
        
       }
     },
@@ -271,7 +273,7 @@ export default {
         formData.append("image", this.dataService.image);
         formData.append("judul", this.dataService.judul);
         const response = await axios.post(
-          "https://backend-sblf.lumirainternational.com/api/auth/create-trend",
+          "https://backend-sblf.lumirainternational.com/api/auth/create-service",
           formData,
           {
             headers: {
@@ -286,17 +288,17 @@ export default {
         } 
         this.dataService.image = null;
         this.fetchServices(); // Reload the about data after adding a new one
-        this.showAlert('Berhasil!','Data trend berhasil ditambahkan.','success');
+        this.showAlert('Berhasil!','Data service berhasil ditambahkan.','success');
         
       } catch (error) {
         console.error(error); // Handle error if any
-                this.showAlert('Opps...','Terjadi kesalahan saat menambahkan data trend.','error');
+                this.showAlert('Opps...','Terjadi kesalahan saat menambahkan data service.','error');
       }
     },
     async deleteService(id) {
       try {
         const response = await axios.delete(
-          `https://backend-sblf.lumirainternational.com/api/auth/delete-trend/${id}`,
+          `https://backend-sblf.lumirainternational.com/api/auth/delete-service/${id}`,
           {
             headers: {
               Authorization: `Bearer ${sessionStorage.getItem("token")}`,
@@ -305,10 +307,10 @@ export default {
         );
         console.log(response.data); // Handle response from server
         this.fetchServices(); // Reload the misi data after adding a new one
-        this.showAlert('Success', 'Trend berhasil didelete', 'success');
+        this.showAlert('Success', 'Service berhasil didelete', 'success');
       } catch (error) {
         console.error(error); // Handle error if any
-               this.showAlert('Oops...', 'Terjadi kesalahan saat mendelete trend', 'error');
+               this.showAlert('Oops...', 'Terjadi kesalahan saat mendelete service', 'error');
        
       }
     },
@@ -316,7 +318,7 @@ export default {
         this.ready = false;
       try {
         const response = await axios.get(
-          "https://backend-sblf.lumirainternational.com/api/auth/list-trend",
+          "https://backend-sblf.lumirainternational.com/api/auth/list-service",
           {
             headers: {
               Authorization: `Bearer ${sessionStorage.getItem("token")}`
@@ -327,7 +329,7 @@ export default {
         this.ready = true;
       } catch (error) {
         console.error(error); // Handle error if any
-        this.showAlert('Opps...','Terjadi kesalahan saat mengambil data benefit.','error');
+        this.showAlert('Opps...','Terjadi kesalahan saat mengambil data service.','error');
       }
     },
     showAlert(title, text, icon) {
@@ -342,8 +344,8 @@ export default {
     },
     konfirmasi(idTrend, trend) {
       Swal.fire({
-        title: `Apakah Anda yakin ingin menghapus trend ${trend}?`,
-        text: "Trend akan dihapus jika anda menekan tombol Hapus.",
+        title: `Apakah Anda yakin ingin menghapus service ${trend}?`,
+        text: "Service akan dihapus jika anda menekan tombol Hapus.",
         icon: "warning",
         showCancelButton: true,
         confirmButtonColor: "#d33",

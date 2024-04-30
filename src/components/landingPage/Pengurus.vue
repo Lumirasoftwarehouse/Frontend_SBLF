@@ -1,6 +1,6 @@
 <template>
 <div class="container team-section">
-  <h2 class="mb-5">Meet Our Team</h2>
+  <h2 class="mb-5 fw-bold">Meet Our Team</h2>
   <div class="row">
     <div class="col-md-6 col-lg-3">
       <div class="team-member">
