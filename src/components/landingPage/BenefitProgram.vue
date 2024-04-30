@@ -48,7 +48,7 @@ export default {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('img/about.webp'); /* Ganti dengan URL gambar latar belakang */
+  background-image: url('/img/about.webp'); /* Ganti dengan URL gambar latar belakang */
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
