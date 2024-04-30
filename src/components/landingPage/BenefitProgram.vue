@@ -2,7 +2,7 @@
   <div class="template" id="benefit">
     <div class="container">
       <div class="row">
-        <p class="feature text-black" data-aos="fade-down" data-aos-duration="1000">Benefits & Programs</p>
+        <p class="feature text-black" data-aos="fade-down" data-aos-duration="1000" style="font-size: 28px">Benefits & Programs</p>
       </div>
       <div class="row">
         <div class="col-md-4 mb-4" v-for="(benefit, index) in dataBenefit" :key="index">

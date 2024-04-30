@@ -2,7 +2,7 @@
   <div class="container pt-4" id="about">
           <h2 class="text-center mt-4 mb-4 fw-bold">Tentang Kami</h2>
           <div class="row">
-            <div class="col-sm-7">
+            <div class="col-sm-7 mt-2">
               <p>{{dataAbout}}</p>
             </div>
             <div class="col-sm-5">
