@@ -29,6 +29,11 @@ const router = createRouter({
       component: () => import('../views/Obip.vue')
     },
     {
+      path: '/olip',
+      name: 'olip',
+      component: () => import('../views/Olip.vue')
+    },
+    {
       path: '/daftar',
       name: 'daftar',
       component: () => import('../views/Daftar.vue')

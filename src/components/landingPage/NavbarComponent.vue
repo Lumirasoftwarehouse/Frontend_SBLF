@@ -54,7 +54,13 @@
                   @click="setActive('obip')"
                   >OBIP</router-link
                 >
-                <a class="dropdown-item" href="#">SLIP</a>
+                <router-link
+                  class="dropdown-item"
+                  :to="{ name: 'olip' }"
+                  v-bind:class="{ active: activeLink === 'olip' }"
+                  @click="setActive('olip')"
+                  >OLIP</router-link
+                >
               </div>
             </div>
           </li>

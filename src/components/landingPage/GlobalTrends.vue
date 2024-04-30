@@ -1,7 +1,7 @@
 <template>
   <div class="globalTrends bg-white">
   <div class="container">
-    <h2 class="text-center fw-bold">GLOBAL TRENDS</h2>
+    <h2 class="text-center mt-4 mb-3 fw-bold">GLOBAL TRENDS</h2>
     <div class="card-container">
       <div class="card" v-for="item in dataTrend" :key="item.id">
         <img :src="`https://backend-sblf.lumirainternational.com/storage/globalTrend/${item.image}`" alt="Card Image" />

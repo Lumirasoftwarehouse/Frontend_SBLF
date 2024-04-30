@@ -1,6 +1,6 @@
 <template>
   <div class="container pt-4" id="about">
-          <h2 class="text-center fw-bold">Tentang Kami</h2>
+          <h2 class="text-center mt-4 fw-bold">Tentang Kami</h2>
           <div class="row">
             <div class="col-sm-6">
               <p>{{dataAbout}}</p>

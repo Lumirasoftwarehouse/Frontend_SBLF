@@ -1,40 +1,42 @@
 <template>
  <div class="container member-section">
-  <h2 class="mb-5 fw-bold">Our Members</h2>
+  <h2 class="mb-5 fw-bold">Anggota</h2>
+  <div class="row mt-5 pt-4">
+    <div class="col-md-12">
+      <div class="member">
+        <img src="/img/anggota/1.webp" alt="Anggota 1">
+        <div class="member-content">
+          <h2>Fretdy Purba, S.E.,M.M</h2>
+          <p>Executive Advisor</p>
+        </div>
+      </div>
+    </div>
+  </div>
   <div class="row">
-    <div class="col-md-6 col-lg-3">
+    <div class="col-md-6 col-lg-4">
       <div class="member">
-        <img src="https://via.placeholder.com/300" alt="Anggota 1">
+        <img src="/img/anggota/2.webp" alt="Anggota 2">
         <div class="member-content">
-          <h2>Anggota 1</h2>
-          <p>Description of Anggota 1.</p>
+          <h2>Feby M Faisal, S.H., M.S.M.</h2>
+          <p>Chief Executive Officer (CEO)</p>
         </div>
       </div>
     </div>
-    <div class="col-md-6 col-lg-3">
+    <div class="col-md-6 col-lg-4">
       <div class="member">
-        <img src="https://via.placeholder.com/300" alt="Anggota 2">
+        <img src="/img/anggota/3.webp" alt="Anggota 3">
         <div class="member-content">
-          <h2>Anggota 2</h2>
-          <p>Description of Anggota 2.</p>
+          <h2>Jody Ikhsan F, S.E., S.Kom.</h2>
+          <p>Chief Operating Officer (COO)</p>
         </div>
       </div>
     </div>
-    <div class="col-md-6 col-lg-3">
+    <div class="col-md-6 col-lg-4">
       <div class="member">
-        <img src="https://via.placeholder.com/300" alt="Anggota 3">
+        <img src="/img/anggota/4.webp" alt="Anggota 4">
         <div class="member-content">
-          <h2>Anggota 3</h2>
-          <p>Description of Anggota 3.</p>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-6 col-lg-3">
-      <div class="member">
-        <img src="https://via.placeholder.com/300" alt="Anggota 4">
-        <div class="member-content">
-          <h2>Anggota 4</h2>
-          <p>Description of Anggota 4.</p>
+          <h2>Faradita Fairuz, S.E.</h2>
+          <p>Chief Marketing Officer (CMO)</p>
         </div>
       </div>
     </div>

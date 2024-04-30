@@ -3,19 +3,21 @@
   <div class="jumbotron-content">
     <div class="text-center">
       <img 
-        :src="`/img/${
+        :src="`/img/header/${
           page == 'about' ? 
-            'about.webp' : 
-          page == 'obip' || page == 'olip' ? 
-            'program.webp' : 
+            'about.jpg' : 
+          page == 'obip' ? 
+            'obip.jpg' :
+           page == 'olip' ? 
+           'olip.jpg' :
           page == 'service' ?
-            'service.webp' : 
+            'service.jpg' : 
           page == 'daftar' ?
-            'daftar.webp' :
+            'register.jpg' :
           page == 'anggota' ?
-          'anggota.webp' : 
+          'anggota.jpg' : 
           page == 'pengurus' ?
-          'pengurus.webp' : 
+          'pengurus.jpg' : 
           ''}`"
         alt="home" 
         height="600"

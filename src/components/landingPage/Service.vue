@@ -1,11 +1,11 @@
 <template>
   <div class="globalTrends bg-white">
   <div class="container">
-    <h2 class="text-center fw-bold">SERVICES</h2>
+    <h2 class="text-center fw-bold mt-5 mb-4">SERVICES</h2>
     <div class="card-container">
-      <div class="card" v-for="item in dataTrend" :key="item.id">
-        <img :src="`https://backend-sblf.lumirainternational.com/storage/globalTrend/${item.image}`" alt="Card Image" />
-        <h5 class="fw-bold">{{ item.judul }}</h5>
+      <div class="card" v-for="item in dataService" :key="item.id">
+        <img :src="`https://backend-sblf.lumirainternational.com/storage/service/${item.image}`" alt="Card Image" />
+        <h5 class="">{{ item.judul }}</h5>
       </div>
     </div>
   </div>
@@ -16,7 +16,7 @@
 <script>
 export default {
   props: {
-    dataTrend: {
+    dataService: {
       type: Array,
       default: () => [],
     },
