@@ -19,7 +19,7 @@
       </button>
       <div :class="navbarClass" id="navbarNav">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
+          <li class="nav-item pe-3">
             <router-link
               class="nav-link menu"
               :to="{ name: 'landing-page' }"
@@ -28,7 +28,7 @@
               >BERANDA</router-link
             >
           </li>
-          <li class="nav-item">
+          <li class="nav-item pe-2">
             <router-link
               class="nav-link menu"
               :to="{ name: 'about-us' }"
@@ -37,7 +37,7 @@
               >TENTANG KAMI</router-link
             >
           </li>
-          <li class="nav-item">
+          <li class="nav-item pe-2">
             <div class="dropdown">
               <router-link
                   class="nav-link menu dropdown-toggle"
@@ -64,7 +64,7 @@
               </div>
             </div>
           </li>
-          <li class="nav-item">
+          <li class="nav-item pe-2">
             <router-link
                   class="nav-link menu"
                   :to="{ name: 'services' }"
@@ -73,7 +73,7 @@
                   >SERVICES</router-link
                 >
           </li>
-          <li class="nav-item">
+          <li class="nav-item pe-2">
             <router-link
               class="nav-link menu"
               :to="{ name: 'anggota' }"
@@ -82,7 +82,7 @@
               >ANGGOTA</router-link
             >
           </li>
-          <li class="nav-item">
+          <li class="nav-item pe-2">
             <router-link
               class="nav-link menu"
               :to="{ name: 'pengurus' }"

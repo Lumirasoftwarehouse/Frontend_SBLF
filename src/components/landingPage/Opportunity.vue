@@ -37,6 +37,10 @@ export default {
       font-family: Helvetica, Arial, sans-serif !important;
       color: black;
     }
+
+img{
+  height: 200px !important;
+}
 .opportunity {
   padding-top: 50px;
   padding-bottom: 50px;

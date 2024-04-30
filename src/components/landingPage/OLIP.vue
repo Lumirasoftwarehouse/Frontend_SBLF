@@ -1,9 +1,7 @@
 <template>
 <div class="container">
-    <img class="logo animation" src="https://via.placeholder.com/150" alt="Logo" />
-    <h1>Coming Soon</h1>
+    <h1 class="mt-5">Coming Soon</h1>
     <p>We're working hard to bring you something special.</p>
-    <button class="cta-button">Notify Me</button>
   </div>
 </template>
 

@@ -25,6 +25,10 @@ export default {
 </script>
 
 <style scoped>
+img{
+  height: 200px !important;
+}
+
 .container{
       font-family: Helvetica, Arial, sans-serif !important;
       color: black;

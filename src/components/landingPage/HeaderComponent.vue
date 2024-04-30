@@ -20,7 +20,7 @@
           'pengurus.jpg' : 
           ''}`"
         alt="home" 
-        height="600"
+        height="650"
         class="jumbotron-image" />
       <h1 class="test-text fw-bold">{{text}}</h1>
     </div>
@@ -50,7 +50,7 @@ export default {
 .test-text{
   z-index: 2;
   margin-top: -300px;
-  margin-bottom: 150px;
+  margin-bottom: 200px;
   color: white; /* Ubah warna teks menjadi putih */
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Tambahkan efek bayangan pada teks */
 }

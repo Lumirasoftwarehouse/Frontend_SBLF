@@ -8,7 +8,7 @@ import Footer from "../components/landingPage/FooterComponent.vue";
 </script>
 <template>
     <Navbar/>
-    <Header page="obip" text="Olip Strategic Business Leaders Forum"/>
+    <Header page="olip" text="OLIP Strategic Business Leaders Forum"/>
     <OLIP/>
     <Footer/>
 </template>
