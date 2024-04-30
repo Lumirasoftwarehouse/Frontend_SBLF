@@ -81,7 +81,6 @@ img{
 }
 
 .opportunity-title {
-  font-family: "Nunito", sans-serif;
   font-weight: 700;
   font-size: 20px;
   margin-bottom: 10px;
@@ -89,7 +88,6 @@ img{
 }
 
 .opportunity-description {
-  font-family: "Nunito", sans-serif;
   font-size: 16px;
   color: #555;
 }
