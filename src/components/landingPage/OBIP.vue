@@ -52,7 +52,13 @@
 
     <div class="cta-section">
       <h2>Daftar Sekarang dan Mulailah Perjalanan Bisnis Anda!</h2>
-      <button @click="registerNow">Daftar Sekarang</button>
+      <!-- https://sblf.co.id/daftar -->
+      <router-link
+              class="btn btn-primary"
+              :to="{ name: 'daftar' }"
+              >Daftar Sekarang</router-link
+            >
+      <!-- <button @click="registerNow">Daftar Sekarang</button> -->
     </div>
 
     <div class="footer">
