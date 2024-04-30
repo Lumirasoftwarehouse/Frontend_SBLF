@@ -32,7 +32,7 @@ export default {
 <style scoped>
 .container{
       font-family: Helvetica, Arial, sans-serif !important;
-      color: black;
+      color: white;
     }
 .template {
   position: relative; /* Membuat posisi relatif untuk konten di dalamnya */
@@ -48,7 +48,7 @@ export default {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('/img/about.webp'); /* Ganti dengan URL gambar latar belakang */
+  background-image: url('/img/bg-benefit.jpg'); /* Ganti dengan URL gambar latar belakang */
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
