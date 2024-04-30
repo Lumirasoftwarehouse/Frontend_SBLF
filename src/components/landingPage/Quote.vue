@@ -8,7 +8,7 @@
       <h3 class="text-center">{{dataQuote}}</h3>
       </div>
       <div class="col-2"> <!-- Kolom kanan -->
-      <img src="/img/kanan.png" style="margin-left: -30px;" alt="kanan">
+      <img src="/img/kanan.png" class="img-kanan" alt="kanan">
       </div>
     </div>
   </div>
@@ -25,6 +25,9 @@ export default {
 </script>
 
 <style scoped>
+.img-kanan{
+  margin-left: -30px !important;
+}
 h3 {
   margin-top: 20px;
   color: #000000;
