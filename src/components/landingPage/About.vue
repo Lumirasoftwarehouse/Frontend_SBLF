@@ -1,11 +1,11 @@
 <template>
   <div class="container pt-4" id="about">
-          <h2 class="text-center mt-4 fw-bold">Tentang Kami</h2>
+          <h2 class="text-center mt-4 mb-4 fw-bold">Tentang Kami</h2>
           <div class="row">
-            <div class="col-sm-6">
+            <div class="col-sm-7">
               <p>{{dataAbout}}</p>
             </div>
-            <div class="col-sm-6">
+            <div class="col-sm-5">
               <img src="/img/about.png" alt="about">
             </div>
           </div>
@@ -28,6 +28,9 @@ export default {
     .container{
       font-family: Helvetica, Arial, sans-serif !important;
       color: black;
+    }
+    img{
+      height: 250px !important;
     }
 @media only screen and (max-width: 600px) {
   h2 {

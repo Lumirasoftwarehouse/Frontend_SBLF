@@ -12,7 +12,7 @@
         </div>
         <div class="col-sm-3">
             <h5>Partner</h5>
-            <h6>Becom a partner</h6>
+            <h6>Become a partner</h6>
             <h6>Feature</h6>
             <h6>Create your event or business</h6>
         </div>

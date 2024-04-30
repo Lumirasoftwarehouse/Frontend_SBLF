@@ -4,30 +4,30 @@
   <div class="row">
     <div class="col-md-6 col-lg-3">
       <div class="team-member">
-        <img src="https://via.placeholder.com/300" alt="Pengurus 1">
-        <h2>Pengurus 1</h2>
-        <p>Description of Pengurus 1.</p>
+        <img src="https://via.placeholder.com/300" alt="Anggota 1">
+        <h2>Anggota 1</h2>
+        <p>Description of Anggota 1.</p>
       </div>
     </div>
     <div class="col-md-6 col-lg-3">
       <div class="team-member">
-        <img src="https://via.placeholder.com/300" alt="Pengurus 2">
-        <h2>Pengurus 2</h2>
-        <p>Description of Pengurus 2.</p>
+        <img src="https://via.placeholder.com/300" alt="Anggota 2">
+        <h2>Anggota 2</h2>
+        <p>Description of Anggota 2.</p>
       </div>
     </div>
     <div class="col-md-6 col-lg-3">
       <div class="team-member">
-        <img src="https://via.placeholder.com/300" alt="Pengurus 3">
-        <h2>Pengurus 3</h2>
-        <p>Description of Pengurus 3.</p>
+        <img src="https://via.placeholder.com/300" alt="Anggota 3">
+        <h2>Anggota 3</h2>
+        <p>Description of Anggota 3.</p>
       </div>
     </div>
     <div class="col-md-6 col-lg-3">
       <div class="team-member">
-        <img src="https://via.placeholder.com/300" alt="Pengurus 4">
-        <h2>Pengurus 4</h2>
-        <p>Description of Pengurus 4.</p>
+        <img src="https://via.placeholder.com/300" alt="Anggota 4">
+        <h2>Anggota 4</h2>
+        <p>Description of Anggota 4.</p>
       </div>
     </div>
   </div>

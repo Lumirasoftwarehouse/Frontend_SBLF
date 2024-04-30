@@ -1,6 +1,6 @@
 <template>
   <div class="container-fluid">
-    <div class="row align-items-center">
+    <div class="row align-items-center margin-left:-30px;">
       <div class="col-2 mb-3"> <!-- Kolom kiri -->
       <img src="/img/kiri.png" alt="kiri" style="margin-left:-90px;">
       </div>
@@ -8,7 +8,7 @@
       <h3 class="text-center">{{dataQuote}}</h3>
       </div>
       <div class="col-2"> <!-- Kolom kanan -->
-      <img src="/img/kanan.png" style="margin-right: -100px;" alt="kanan">
+      <img src="/img/kanan.png" style="margin-left: -30px;" alt="kanan">
       </div>
     </div>
   </div>

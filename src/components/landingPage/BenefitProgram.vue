@@ -53,7 +53,6 @@ export default {
   background-position: center;
   background-attachment: fixed;
   filter: grayscale(70%) blur(5px); /* Efek grayscale dan blur hanya pada latar belakang */
-  z-index: -1; /* Menempatkan latar belakang di bawah konten */
 }
 
 .feature {
@@ -75,6 +74,7 @@ export default {
 }
 
 .card-img-overlay {
+  /* background-image: url(''); */
   display: flex;
   flex-direction: column;
   justify-content: center;
