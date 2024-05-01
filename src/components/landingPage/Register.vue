@@ -4,17 +4,17 @@
       <h2 class="text-center fw-bold mt-3 mb-4">REGISTER</h2>
       <div class="row">
         <div class="col-sm-6">
-          <img src="/img/register.png" alt="register" width="400"/>
+          <img src="/img/register.png" alt="register" width="400" />
         </div>
         <div class="col-sm-6">
           <form @submit.prevent="submitRegister">
             <div class="mb-3">
-              <label for="fullName" class="form-label">Full Name</label>
+              <label for="fullName" class="form-label">Nama Lengkap</label>
               <input
                 type="text"
                 class="form-control"
                 id="fullName"
-                placeholder="Enter your full name"
+                placeholder="Masukkan nama lengkap anda"
                 v-model="fullName"
               />
             </div>
@@ -24,33 +24,49 @@
                 type="email"
                 class="form-control"
                 id="email"
-                placeholder="Enter your email"
+                placeholder="Masukkan email anda"
                 v-model="email"
               />
             </div>
             <div class="mb-3">
-              <label for="phone" class="form-label">Phone Number</label>
+              <label for="phone" class="form-label">Nomor HP</label>
               <input
                 type="tel"
                 class="form-control"
                 id="phone"
-                placeholder="Enter your phone number"
+                placeholder="Masukkan nomor hp anda"
                 v-model="phone"
               />
             </div>
             <div class="mb-3">
-              <label for="company" class="form-label">Company Name</label>
+              <label for="company" class="form-label">Nama Perusahaan</label>
               <input
                 type="text"
                 class="form-control"
                 id="company"
-                placeholder="Enter your company name"
+                placeholder="Masukkan nama perusahaan anda"
                 v-model="company"
               />
             </div>
-            <button type="submit" class="btn btn-primary">Register</button>
+            <div class="mb-3">
+              <label for="company" class="form-label">Bidang</label>
+              <select class="form-select" aria-label="Default select example" v-model="bidang">
+                <option selected>Pilih Bidang</option>
+                <option value="AI">AI</option>
+                <option value="Blockchain">Blockchain</option>
+                <option value="IoT">IoT</option>
+                <option value="Health">Health</option>
+                <option value="Education">Education</option>
+                <option value="Agriculture">Agriculture</option>
+                <option value="Blue Economy">Blue Economy</option>
+                <option value="Green Economy">Green Economy</option>
+                <option value="Finance and Investment">Finance and Investment</option>
+                <option value="Psycho and Mental Health">Psycho and Mental Health</option>
+                <option value="Others">Others...</option>
+              </select>
+            </div>
+            <button type="submit" class="btn btn-primary">Daftar</button>
           </form>
-        
         </div>
       </div>
     </div>
@@ -67,6 +83,7 @@ export default {
       email: "",
       phone: "",
       company: "",
+      bidang:""
     };
   },
   methods: {
@@ -76,24 +93,29 @@ export default {
         email: this.email,
         num_phone: this.phone,
         company: this.company,
+        bidang: this.bidang,
       };
 
       // Kirim data ke API untuk insert register
-      fetch("https://backend-sblf.lumirainternational.com/api/insert-register", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(formData),
-      })
+      fetch(
+        // "http://127.0.0.1:8000/api/insert-register",
+        "https://backend-sblf.lumirainternational.com/api/insert-register",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(formData),
+        }
+      )
         .then((response) => response.json())
         .then((data) => {
           console.log(data);
           // Tampilkan sweet alert success
           Swal.fire({
-            icon: 'success',
-            title: 'Success',
-            text: 'Registration successful!',
+            icon: "success",
+            title: "Success",
+            text: "Berhasil mendaftar!",
           });
 
           // Bersihkan nilai input setelah berhasil
@@ -105,9 +127,9 @@ export default {
         .catch((error) => {
           console.error("Error:", error);
           Swal.fire({
-            icon: 'error',
-            title: 'Error',
-            text: 'Registration failed!',
+            icon: "error",
+            title: "Error",
+            text: "Gagal mendaftar!",
           });
         });
     },
@@ -116,8 +138,8 @@ export default {
 </script>
 
 <style scoped>
-.container{
-      font-family: Helvetica, Arial, sans-serif !important;
-      color: black;
-    }
+.container {
+  font-family: Helvetica, Arial, sans-serif !important;
+  color: black;
+}
 </style>
