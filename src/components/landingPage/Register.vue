@@ -51,7 +51,7 @@
             <div class="mb-3">
               <label for="company" class="form-label">Bidang</label>
               <select class="form-select" aria-label="Default select example" v-model="bidang">
-                <option selected>Pilih Bidang</option>
+                <option selected value="">Pilih Bidang</option>
                 <option value="AI">AI</option>
                 <option value="Blockchain">Blockchain</option>
                 <option value="IoT">IoT</option>
