@@ -25,7 +25,7 @@ onMounted(async () => {
 </script>
 <template>
     <Navbar/>
-  <Header page="anggota" text="Anggota Strategic Business Leaders Forum"/>
+  <Header page="berita" text="Berita Strategic Business Leaders Forum"/>
     <Berita :dataBerita="dataBerita"/>
     <Footer/>
 </template>

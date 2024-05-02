@@ -7,13 +7,22 @@
         <img src="/img/anggota/Farid.jpeg" alt="Dr. A. FARID AULIA, DEA">
         <div class="member-content">
           <h2>Dr. Ir. A. FARID AULIA, DEA</h2>
-          <p class="text-uppercase">President</p>
+          <p class="text-uppercase">Sekjen (Sekretaris Jendral )</p>
         </div>
       </div>
     </div>
   </div>
-  <div class="row mt-5 pt-4">
-    <div class="col-md-12">
+  <div class="row mt-5">
+    <div class="col-md-6 col-lg-6">
+      <div class="member">
+        <img src="/img/anggota/1.webp" alt="Anggota 3">
+        <div class="member-content">
+          <h2>Fretdy Purba, S.E., M.M.</h2>
+          <p class="text-uppercase">Direktur Jendral Govement Relations & Treasury</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 col-lg-6">
       <div class="member">
         <img src="/img/anggota/2.webp" alt="Feby M Faisal, S.H., M.S.M., PhD (Cand)">
         <div class="member-content">
@@ -25,22 +34,13 @@
   </div>
 
   <!-- 3 kolom ke samping -->
-  <div class="row mt-3">
-    <div class="col-md-6 col-lg-4">
-      <div class="member">
-        <img src="/img/anggota/1.webp" alt="Anggota 3">
-        <div class="member-content">
-          <h2>Fretdy Purba, S.E., M.M.</h2>
-          <p class="text-uppercase">Govt Relation and Treasury Executive Director</p>
-        </div>
-      </div>
-    </div>
+  <div class="row mt-4">
     <div class="col-md-6 col-lg-4">
       <div class="member">
         <img src="/img/anggota/3.webp" alt="Anggota 4">
         <div class="member-content">
           <h2>Jody Ikhsan Firdaus, S.E., S.Kom.</h2>
-          <p class="text-uppercase">Financial and Membership Director</p>
+          <p class="text-uppercase">Direktur Eksekutif Financial and Membership</p>
         </div>
       </div>
     </div>
@@ -51,27 +51,27 @@
           <!-- <h2>Jody Ikhsan Firdaus, S.E., S.Kom.</h2>
           <p>Financial and Membership Director</p> -->
           <h2>Faradita Fairuz, S.E. Mgt, MBA (Cand)</h2>
-          <p class="text-uppercase">Innovation and Development Director</p>
+          <p class="text-uppercase">Direktur Eksekutif Innovation and Development</p>
         </div>
       </div>
     </div>
-  </div>
-  <div class="row mt-3">
     <div class="col-md-6 col-lg-4">
       <div class="member">
         <img src="/img/anggota/Tsalisa.jpeg" alt="Anggota 2">
         <div class="member-content">
           <h2>Tsaltsa Haura, S.Psi, M.Psi</h2>
-          <p class="text-uppercase">Director CSR and Public Relations</p>
+          <p class="text-uppercase">Direktur Eksekutif CSR and Public Relations</p>
         </div>
       </div>
     </div>
+  </div>
+  <div class="row mt-4">
     <div class="col-md-6 col-lg-4">
       <div class="member">
         <img src="/img/anggota/qori.jpeg" alt="Anggota 3">
         <div class="member-content">
           <h2>Dr. Dodi Qori U, S.T., M.T.</h2>
-          <p class="text-uppercase">Blockchain Technology and Consultant Director</p>
+          <p class="text-uppercase">Direktur Eksekutif Blockchain Technology and Consultant</p>
         </div>
       </div>
     </div>
@@ -80,7 +80,16 @@
         <img src="/img/anggota/rifqi_adiasya.jpeg" alt="Anggota 4">
         <div class="member-content">
           <h2>M. Rifqi Adiasya, S.Psi</h2>
-          <p class="text-uppercase">Asset Valuation and Leveraging Director</p>
+          <p class="text-uppercase">Direktur Eksekutif Asset Valuation and Leveraging</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 col-lg-4">
+      <div class="member">
+        <img src="/img/anggota/indera.jpeg" alt="Anggota 4">
+        <div class="member-content">
+          <h2>MD Indera Tasripin</h2>
+          <p class="text-uppercase">Direktur Eksekutif International & Investor Relations</p>
         </div>
       </div>
     </div>

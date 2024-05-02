@@ -1,8 +1,7 @@
 <template>
   <div class="container" id="berita">
     <div class="row">
-      <p class="berita-title">Berita</p>
-      <h2 class="some-berita-title">Some Of Our Berita</h2>
+      <h2 class="berita-title fw-bold text-center mt-5 mb-4">Berita</h2>
     </div>
     <div class="row">
       <div class="col-md-3" v-for="(item, index) in dataBerita" :key="index">
@@ -31,16 +30,10 @@ export default {
 
 
 <style scoped>
-.berita-title {
-  font-size: 24px;
-  font-weight: bold;
-}
-
-.some-berita-title {
-  font-size: 36px;
-  font-weight: bold;
-  margin-top: 20px;
-}
+.container{
+      font-family: Helvetica, Arial, sans-serif !important;
+      color: black;
+    }
 
 .card {
   margin-bottom: 20px;

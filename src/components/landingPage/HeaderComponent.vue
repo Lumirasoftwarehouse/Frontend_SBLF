@@ -18,6 +18,8 @@
           'anggota.jpg' : 
           page == 'pengurus' ?
           'pengurus.jpg' : 
+          page == 'berita' ?
+          'berita.avif' : 
           ''}`"
         alt="home" 
         height="650"
