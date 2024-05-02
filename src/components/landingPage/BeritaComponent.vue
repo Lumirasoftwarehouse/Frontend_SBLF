@@ -7,7 +7,7 @@
     <div class="row">
       <div class="col-md-3" v-for="(item, index) in dataBerita" :key="index">
         <div class="card">
-          <img :src="`http://127.0.0.1:8000/storage/berita/${item.image}`" class="card-img-top" alt="Card image cap">
+          <img :src="`https://backend-sblf.lumirainternational.com/storage/berita/${item.image}`" class="card-img-top" alt="Card image cap">
           <div class="card-body">
             <h5 class="card-title">{{ item.judul }}</h5>
             <p class="card-text">{{ item.deskripsi }}</p>
