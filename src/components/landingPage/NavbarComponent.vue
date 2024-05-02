@@ -91,6 +91,15 @@
               >PENGURUS</router-link
             >
           </li>
+          <li class="nav-item pe-2">
+            <router-link
+              class="nav-link menu"
+              :to="{ name: 'berita' }"
+              v-bind:class="{ active: activeLink === 'berita' }"
+              @click="setActive('berita')"
+              >BERITA</router-link
+            >
+          </li>
           <li class="nav-item">
             <router-link
               class="btn"

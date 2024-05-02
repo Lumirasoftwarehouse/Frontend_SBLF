@@ -44,6 +44,11 @@ const router = createRouter({
       component: () => import('../views/Anggota.vue')
     },
     {
+      path: '/berita',
+      name: 'berita',
+      component: () => import('../views/Berita.vue')
+    },
+    {
       path: '/login',
       name: 'login',
       component: () => import('../views/LoginView.vue')
@@ -116,6 +121,11 @@ const router = createRouter({
       path: '/admin-pengurus',
       name: 'admin-pengurus',
       component: () => import('../views/admin/Pengurus.vue')
+    },    
+    {
+      path: '/admin-berita',
+      name: 'admin-berita',
+      component: () => import('../views/admin/Berita.vue')
     },    
   ]
 })

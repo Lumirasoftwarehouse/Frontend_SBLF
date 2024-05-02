@@ -6,8 +6,8 @@
       <div class="member">
         <img src="/img/anggota/Farid.jpeg" alt="Dr. A. FARID AULIA, DEA">
         <div class="member-content">
-          <h2>Dr. A. FARID AULIA, DEA</h2>
-          <p>President</p>
+          <h2>Dr. Ir. A. FARID AULIA, DEA</h2>
+          <p class="text-uppercase">President</p>
         </div>
       </div>
     </div>
@@ -18,7 +18,7 @@
         <img src="/img/anggota/2.webp" alt="Feby M Faisal, S.H., M.S.M., PhD (Cand)">
         <div class="member-content">
           <h2>Feby M Faisal, S.H., M.S.M., PhD (Cand)</h2>
-          <p>Secretary General</p>
+          <p class="text-uppercase">Secretary General</p>
         </div>
       </div>
     </div>
@@ -31,7 +31,7 @@
         <img src="/img/anggota/1.webp" alt="Anggota 3">
         <div class="member-content">
           <h2>Fretdy Purba, S.E., M.M.</h2>
-          <p>Govt Relation and Treasury Executive Director</p>
+          <p class="text-uppercase">Govt Relation and Treasury Executive Director</p>
         </div>
       </div>
     </div>
@@ -40,7 +40,7 @@
         <img src="/img/anggota/3.webp" alt="Anggota 4">
         <div class="member-content">
           <h2>Jody Ikhsan Firdaus, S.E., S.Kom.</h2>
-          <p>Financial and Membership Director</p>
+          <p class="text-uppercase">Financial and Membership Director</p>
         </div>
       </div>
     </div>
@@ -51,7 +51,7 @@
           <!-- <h2>Jody Ikhsan Firdaus, S.E., S.Kom.</h2>
           <p>Financial and Membership Director</p> -->
           <h2>Faradita Fairuz, S.E. Mgt, MBA (Cand)</h2>
-          <p>Innovation and Development Director</p>
+          <p class="text-uppercase">Innovation and Development Director</p>
         </div>
       </div>
     </div>
@@ -62,7 +62,7 @@
         <img src="/img/anggota/Tsalisa.jpeg" alt="Anggota 2">
         <div class="member-content">
           <h2>Tsaltsa Haura, S.Psi, M.Psi</h2>
-          <p>Director CSR and Public Relations</p>
+          <p class="text-uppercase">Director CSR and Public Relations</p>
         </div>
       </div>
     </div>
@@ -71,7 +71,7 @@
         <img src="/img/anggota/qori.jpeg" alt="Anggota 3">
         <div class="member-content">
           <h2>Dr. Dodi Qori U, S.T., M.T.</h2>
-          <p>Blockchain Technology and Consultant Director</p>
+          <p class="text-uppercase">Blockchain Technology and Consultant Director</p>
         </div>
       </div>
     </div>
@@ -80,7 +80,7 @@
         <img src="/img/anggota/rifqi_adiasya.jpeg" alt="Anggota 4">
         <div class="member-content">
           <h2>M. Rifqi Adiasya, S.Psi</h2>
-          <p>Asset Valuation and Leveraging Director</p>
+          <p class="text-uppercase">Asset Valuation and Leveraging Director</p>
         </div>
       </div>
     </div>

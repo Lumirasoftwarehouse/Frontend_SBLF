@@ -176,6 +176,18 @@
     </router-link>
   </li>
 
+  <!-- Berita -->
+  <li class="nav-item">
+    <router-link
+      class="nav-link text-primary"
+      to="/admin-berita"
+      active-class="font-weight-bold text-primary active-link"
+    >
+      <i class="bi bi-newspaper text-primary"></i>
+      <span>Berita</span>
+    </router-link>
+  </li>
+
   <!-- Register -->
   <li class="nav-item">
     <router-link
