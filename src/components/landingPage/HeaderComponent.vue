@@ -19,7 +19,7 @@
           page == 'pengurus' ?
           'pengurus.jpg' : 
           page == 'berita' ?
-          'berita.avif' : 
+          'news.jpg' : 
           ''}`"
         alt="home" 
         height="650"

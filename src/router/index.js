@@ -49,6 +49,12 @@ const router = createRouter({
       component: () => import('../views/Berita.vue')
     },
     {
+      path: '/detail-berita/:id',
+      name: 'detail-berita',
+      component: () => import('../views/DetailBerita.vue'),
+      props: true
+    },
+    {
       path: '/login',
       name: 'login',
       component: () => import('../views/LoginView.vue')

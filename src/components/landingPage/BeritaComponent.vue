@@ -6,11 +6,16 @@
     <div class="row">
       <div class="col-md-3" v-for="(item, index) in dataBerita" :key="index">
         <div class="card">
-          <img :src="`https://backend-sblf.lumirainternational.com/storage/berita/${item.image}`" class="card-img-top" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">{{ item.judul }}</h5>
-            <p class="card-text">{{ item.deskripsi }}</p>
-          </div>
+          <router-link
+:to="{ name: 'detail-berita', params: { id: index } }"
+              >
+                <img :src="`https://backend-sblf.lumirainternational.com/storage/berita/${item.image}`" class="card-img-top" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">{{ item.judul }}</h5>
+                  <!-- <p class="card-text">{{ item.deskripsi }}</p> -->
+                </div>
+              </router-link
+            >
         </div>
       </div>
     </div>
