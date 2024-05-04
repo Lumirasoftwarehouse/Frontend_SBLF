@@ -7,7 +7,7 @@
           <img src="/img/anggota/Farid.jpeg" alt="Dr. A. FARID AULIA, DEA" />
           <div class="member-content">
             <h2>Dr. Ir. A. FARID AULIA, DEA</h2>
-            <span class="text-uppercase">President</span>
+            <span class="text-uppercase">Presiden</span>
           </div>
         </div>
       </div>
@@ -21,7 +21,7 @@
           />
           <div class="member-content">
             <h2>Feby M Faisal, S.H., M.S.M., PhD (Cand)</h2>
-            <span class="text-uppercase">Sekjen (Sekretaris Jendral )</span>
+            <span class="text-uppercase">Sekretaris Jendral(Sekjen)</span>
           </div>
         </div>
       </div>
@@ -90,9 +90,8 @@
           <img src="/img/anggota/rifqi_adiasya.jpeg" alt="Anggota 4" />
           <div class="member-content">
             <h2>M. Rifqi Adiasya, S.Psi</h2>
-            <span class="text-uppercase"
-              >Direktur Eksekutif Asset Valuation and Leveraging</span
-            >
+            <span class="text-uppercase">Direktur Eksekutif</span><br />
+            <span class="text-uppercase">Asset Valuation and Leveraging</span>
           </div>
         </div>
       </div>
