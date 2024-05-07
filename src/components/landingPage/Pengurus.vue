@@ -31,7 +31,7 @@
           <div class="member-content">
             <h2>Fretdy Purba, S.E., M.M.</h2>
             <span class="text-uppercase">Direktur Jendral</span><br />
-            <span class="text-uppercase">Govement Relations & Treasury</span>
+            <span class="text-uppercase">Government Relations & Treasury</span>
           </div>
         </div>
       </div>
@@ -56,7 +56,7 @@
             <!-- <h2>Jody Ikhsan Firdaus, S.E., S.Kom.</h2>
           <span>Financial and Membership Director</span> -->
             <h2>Faradita Fairuz, S.E. Mgt, MBA (Cand)</h2>
-            <span class="text-uppercase">Direktur Eksekutift</span><br />
+            <span class="text-uppercase">Direktur Eksekutif</span><br />
             <span class="text-uppercase">Innovation and Development</span>
           </div>
         </div>
@@ -65,8 +65,8 @@
         <div class="member">
           <img src="/img/anggota/Tsalisa.jpeg" alt="Anggota 2" />
           <div class="member-content">
-            <h2>Tsaltsa Haura, S.Psi, M.Psi</h2>
-            <span class="text-uppercase">Direktur Eksekutift</span><br />
+            <h2>Tsalitsa Haura, S.Psi, M.Psi</h2>
+            <span class="text-uppercase">Direktur Eksekutif</span><br />
             <span class="text-uppercase">CSR and Public Relations</span>
           </div>
         </div>

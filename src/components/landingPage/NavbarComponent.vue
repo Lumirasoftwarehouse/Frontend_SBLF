@@ -73,7 +73,7 @@
                   >SERVICES</router-link
                 >
           </li>
-          <li class="nav-item pe-2">
+          <!-- <li class="nav-item pe-2">
             <router-link
               class="nav-link menu"
               :to="{ name: 'anggota' }"
@@ -81,7 +81,7 @@
               @click="setActive('anggota')"
               >ANGGOTA</router-link
             >
-          </li>
+          </li> -->
           <li class="nav-item pe-2">
             <router-link
               class="nav-link menu"
