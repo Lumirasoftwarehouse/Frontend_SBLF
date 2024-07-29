@@ -123,8 +123,7 @@ export default {
       formData.append("password", this.form.password);
 
       axios
-        .post("https://backend-sblf.lumirainternational.com/api/auth/login", formData)
-        // .post("http://127.0.0.1:8000/api/auth/login", formData)
+        .post(`http://127.0.0.1:8000/api/auth/login`, formData)
         .then((response) => {
           if (this.cheked === true) {
             const login = JSON.stringify(this.form);
@@ -138,8 +137,13 @@ export default {
 
           const token = response.data.access_token;
           sessionStorage.setItem("token", token);
+          if (response.data.level == '0') {
+            this.$router.push("/home");
+          }else if (response.data.level == '1') {
             this.$router.push("/admin-dashboard");
-
+          }else if(response.data.level == '2'){
+            this.$router.push("/yayasan-dashboard");
+          }
         })
         .catch((error) => {
           console.error(error);

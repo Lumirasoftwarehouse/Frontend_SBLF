@@ -1,208 +1,111 @@
 <template>
-<!-- Sidebar -->
-<ul
-  class="navbar-nav bg-light sidebar sidebar-dark accordion"
-  id="accordionSidebar"
-  :class="{ toggled: sidebarToggled }"
->
-  <!-- Sidebar - Brand -->
-  <a
-    class="sidebar-brand d-flex align-items-center justify-content-center"
-    href="#"
+  <!-- Sidebar -->
+  <ul
+    class="navbar-nav bg-light sidebar sidebar-dark accordion"
+    id="accordionSidebar"
+    :class="{ toggled: sidebarToggled }"
   >
-    <div class="sidebar-brand-icon mt-2">
-      <img src="/img/logo.png" alt="logo" width="50" />
-    </div>
-    <div class="sidebar-brand-text ms-3">
-      <span class="text-primary">SBLF</span>
-    </div>
-  </a>
+    <!-- Sidebar - Brand -->
+    <a
+      class="sidebar-brand d-flex align-items-center justify-content-center"
+      href="#"
+    >
+      <div class="sidebar-brand-icon mt-2">
+        <img src="/img/logo.png" alt="logo" width="140" />
+      </div>
+    </a>
 
-  <!-- Heading -->
-  <div class="sidebar-heading mt-5 text-primary">Menu</div>
+    <!-- Heading -->
+    <div class="sidebar-heading mt-5 text-success">Menu</div>
 
-  <!-- Beranda -->
+    <li class="nav-item">
+      <router-link
+        class="nav-link text-dark"
+        to="/"
+        active-class="active-link"
+      >
+        <i class="bi bi-grid text-dark"></i>
+        <span>Dashboard</span>
+      </router-link>
+    </li>
+    <li class="nav-item">
+      <router-link
+        class="nav-link text-dark"
+        to="/admin-sosial"
+        active-class="active-link"
+      >
+        <i class="bi bi-currency-exchange text-dark"></i>
+        <span>Program Sosial</span>
+      </router-link>
+    </li>
+    <li class="nav-item">
+      <router-link
+        class="nav-link text-dark"
+        to="/admin-transaksi"
+        active-class="active-link"
+      >
+        <i class="bi bi-credit-card text-dark"></i>
+        <span>Transaksi</span>
+      </router-link>
+    </li>
+
+      <!-- Beranda -->
   <li class="nav-item">
     <a
       class="nav-link collapsed text-primary"
       href="#"
       data-toggle="collapse"
-      data-target="#collapsePagesBeranda"
+      data-target="#collapsePagesProduct"
       aria-expanded="true"
-      aria-controls="collapsePagesBeranda"
+      aria-controls="collapsePagesProduct"
     >
-      <i class="fas fa-home text-primary"></i>
-      <span>Beranda</span>
+              <i class="bi bi-bag-fill text-dark"></i>
+      <span>Product</span>
     </a>
+
     <div
-      id="collapsePagesBeranda"
+      id="collapsePagesProduct"
       class="collapse"
       aria-labelledby="headingPages"
       data-parent="#accordionSidebar"
     >
       <div class="bg-white py-2 collapse-inner rounded">
-        <h6 class="collapse-header">Menu Beranda</h6>
+        <h6 class="collapse-header">Menu Product</h6>
         <router-link
           class="dropdown-item"
-          :to="{ name: 'admin-opportunity' }"
-          >Opportunity</router-link>
+          :to="{ name: 'admin-product' }"
+          >List Product</router-link>
         <router-link
           class="dropdown-item"
-          :to="{ name: 'admin-benefit' }"
-          >Benefit Program</router-link>
-        <router-link
-          class="dropdown-item"
-          :to="{ name: 'admin-quote' }"
-          >Quote</router-link>
-        <router-link
-          class="dropdown-item"
-          :to="{ name: 'admin-client' }"
-          >Client Partner</router-link>
+          :to="{ name: 'my-product' }"
+          >My Product</router-link>
       </div>
     </div>
   </li>
 
-  <!-- Tentang Kami -->
-  <li class="nav-item">
-    <a
-      class="nav-link collapsed text-primary"
-      href="#"
-      data-toggle="collapse"
-      data-target="#collapsePagesAbout"
-      aria-expanded="true"
-      aria-controls="collapsePagesAbout"
-    >
-      <i class="fas fa-users text-primary"></i>
-      <span>Tentang Kami</span>
-    </a>
-    <div
-      id="collapsePagesAbout"
-      class="collapse"
-      aria-labelledby="headingPages"
-      data-parent="#accordionSidebar"
-    >
-      <div class="bg-white py-2 collapse-inner rounded">
-        <h6 class="collapse-header">Menu Tentang Kami</h6>
-        <router-link
-          class="dropdown-item"
-          :to="{ name: 'admin-about' }"
-          >About Us</router-link>
-        <router-link
-          class="dropdown-item"
-          :to="{ name: 'admin-visi-misi' }"
-          >Visi Misi</router-link>
-        <router-link
-          class="dropdown-item"
-          :to="{ name: 'admin-trend' }"
-          >Global Trends</router-link>
-        <router-link
-          class="dropdown-item"
-          :to="{ name: 'admin-value' }"
-          >Orientation Value</router-link>
-      </div>
-    </div>
-  </li>
-
-  <!-- Program -->
-  <li class="nav-item">
-    <a
-      class="nav-link collapsed text-primary"
-      href="#"
-      data-toggle="collapse"
-      data-target="#collapsePagesProgram"
-      aria-expanded="true"
-      aria-controls="collapsePagesProgram"
-    >
-      <i class="fas fa-cogs text-primary"></i>
-      <span>Program</span>
-    </a>
-    <div
-      id="collapsePagesProgram"
-      class="collapse"
-      aria-labelledby="headingPages"
-      data-parent="#accordionSidebar"
-    >
-      <div class="bg-white py-2 collapse-inner rounded">
-        <h6 class="collapse-header">Menu Program</h6>
-        <router-link
-          class="dropdown-item"
-          :to="{ name: 'obip' }"
-          v-bind:class="{ active: activeLink === 'obip' }"
-          @click="setActive('obip')"
-          >SBIP</router-link>
-        <router-link
-          class="dropdown-item"
-          :to="{ name: 'obip' }"
-          v-bind:class="{ active: activeLink === 'obip' }"
-          @click="setActive('obip')"
-          >BOLIP</router-link>
-      </div>
-    </div>
-  </li>
-
-  <!-- Service -->
-  <li class="nav-item">
-    <router-link
-      class="nav-link text-primary"
-      to="/admin-service"
-      active-class="font-weight-bold text-primary active-link"
-    >
-      <i class="bi bi-gear-wide-connected text-primary"></i>
-      <span>Service</span>
-    </router-link>
-  </li>
-
-  <!-- Anggota -->
-  <li class="nav-item">
-    <router-link
-      class="nav-link text-primary"
-      to="/admin-anggota"
-      active-class="font-weight-bold text-primary active-link"
-    >
-      <i class="bi bi-people text-primary"></i>
-      <span>Anggota</span>
-    </router-link>
-  </li>
-
-  <!-- Pengurus -->
-  <li class="nav-item">
-    <router-link
-      class="nav-link text-primary"
-      to="/admin-pengurus"
-      active-class="font-weight-bold text-primary active-link"
-    >
-      <i class="bi bi-person-circle text-primary"></i>
-      <span>Pengurus</span>
-    </router-link>
-  </li>
-
-  <!-- Berita -->
-  <li class="nav-item">
-    <router-link
-      class="nav-link text-primary"
-      to="/admin-berita"
-      active-class="font-weight-bold text-primary active-link"
-    >
-      <i class="bi bi-newspaper text-primary"></i>
-      <span>Berita</span>
-    </router-link>
-  </li>
-
-  <!-- Register -->
-  <li class="nav-item">
-    <router-link
-      class="nav-link text-primary"
-      to="/admin-register"
-      active-class="font-weight-bold text-primary active-link"
-    >
-      <i class="bi bi-person-plus text-primary"></i>
-      <span>Register</span>
-    </router-link>
-  </li>
-
-  <!-- Divider -->
-  <hr class="sidebar-divider d-none d-md-block" />
-</ul>
-<!-- End of Sidebar -->
-
+    <!-- Divider -->
+    <hr class="sidebar-divider d-none d-md-block" />
+  </ul>
+  <!-- End of Sidebar -->
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      sidebarToggled: false,
+    };
+  },
+};
+</script>
+
+<style scoped>
+.navbar-nav.bg-light {
+  background-color: #f8f9fa !important;
+}
+
+.navbar-nav .nav-link.active-link {
+  background-color: #e9ecef;
+  border-radius: 0.25rem;
+}
+</style>

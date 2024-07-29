@@ -1,7 +1,7 @@
 <template>
   <!-- Topbar -->
   <nav
-    class="navbar navbar-expand navbar-light customNav bgCustom topbar mb-4 static-top shadow"
+    class="navbar navbar-expand navbar-light customNav bg-success topbar mb-4 static-top shadow"
   >
     <!-- Sidebar Toggle (Topbar) -->
     <form class="form-inline" @submit.prevent>
@@ -154,9 +154,6 @@ export default {
 </script>
 <style scoped>
 .customNav {
-  border-bottom: 5px solid #fac800;
-}
-.bgCustom {
-  background-color: #061387;
+  border-bottom: 5px solid #cca405;
 }
 </style>

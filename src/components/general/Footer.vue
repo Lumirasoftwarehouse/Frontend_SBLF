@@ -1,9 +1,9 @@
 <template>
   <!-- Footer -->
-  <footer class="sticky-footer customNav bgCustom">
+  <footer class="sticky-footer customNav bg-success">
     <div class="container my-auto">
       <div class="copyright text-center my-auto">
-        <strong>Copyright &copy; SBLF 2024</strong>
+        <strong>Copyright &copy; BABA 2024</strong>
       </div>
     </div>
   </footer>
@@ -11,12 +11,9 @@
 </template>
 <style scoped>
 strong{
-  color: #fcf808;
+  color: white;
 }
 .customNav {
-  border-top: 5px solid #fac800;
-}
-.bgCustom {
-  background-color: #061387;
+  border-top: 5px solid #cca405;
 }
 </style>

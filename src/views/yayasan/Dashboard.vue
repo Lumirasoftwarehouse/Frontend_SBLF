@@ -1,5 +1,5 @@
 <script setup>
-import Sidebar from "../../components/admin/Sidebar.vue";
+import Sidebar from "../../components/yayasan/Sidebar.vue";
 import Navbar from "../../components/general/Navbar.vue";
 import Footer from "../../components/general/Footer.vue";
 import Card from "../../components/general/Card.vue";
