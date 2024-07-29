@@ -21,10 +21,10 @@ import { ref } from 'vue';
 export default {
   setup() {
     const menuItems = [
-      { label: 'Home', icon: 'house-door', path: '/' },
+      { label: 'Home', icon: 'house-door', path: '/home' },
       { label: 'Voucher', icon: 'ticket', path: 'profile' },
       { label: 'Bayar', icon: 'credit-card', path: 'profile' },
-      { label: 'Inbox', icon: 'envelope', path: 'profile' },
+      { label: 'Inbox', icon: 'envelope', path: 'notifikasi' },
       { label: 'Profile', icon: 'person', path: '/profile' },
     ];
     const activeItem = ref('Home');

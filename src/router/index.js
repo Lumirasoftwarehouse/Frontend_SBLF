@@ -19,6 +19,11 @@ const router = createRouter({
       component: () => import('../views/Pin.vue')
     },
     {
+      path: '/notifikasi',
+      name: 'notifikasi',
+      component: () => import('../views/user/Notifikasi.vue')
+    },
+    {
       path: '/profile',
       name: 'profile',
       component: () => import('../views/user/Profile.vue')
